@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111827">
+  <title>Kevin Job Agent</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">PERSONAL JOB DASHBOARD</div>
+        <h1>Kevin Job Agent</h1>
+      </div>
+      <button id="installBtn" class="ghost-btn hidden">Install</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow">TODAY</div>
+          <h2>Find the right next role.</h2>
+          <p>Healthcare Operations, Business & Systems Operations, and Growth Operations — with SEO kept secondary.</p>
+        </div>
+        <div class="hero-stat">
+          <span id="matchCount">3</span>
+          <small>matches</small>
+        </div>
+      </section>
+
+      <section class="quick-stats">
+        <div class="stat-card"><span class="stat-label">Minimum salary</span><strong id="minSalaryDisplay">$100K</strong></div>
+        <div class="stat-card"><span class="stat-label">Top fit</span><strong id="topFitDisplay">94%</strong></div>
+        <div class="stat-card"><span class="stat-label">Applied</span><strong id="appliedCount">0</strong></div>
+      </section>
+
+      <section class="section-heading">
+        <div><div class="eyebrow">DAILY MATCHES</div><h3>Recommended jobs</h3></div>
+        <button id="resetDemo" class="text-btn">Reset demo</button>
+      </section>
+
+      <div id="jobsList" class="jobs-list"></div>
+
+      <section id="criteria" class="panel">
+        <div class="section-heading compact">
+          <div><div class="eyebrow">YOUR CRITERIA</div><h3>Job preferences</h3></div>
+        </div>
+
+        <div class="form-grid">
+          <label>Minimum salary
+            <select id="minSalary">
+              <option value="100000">$100,000+</option>
+              <option value="110000">$110,000+</option>
+              <option value="120000">$120,000+</option>
+              <option value="130000">$130,000+</option>
+            </select>
+          </label>
+
+          <label>Location
+            <select id="locationPref">
+              <option>NYC / Long Island / Remote</option>
+              <option>NYC only</option>
+              <option>NYC + Long Island</option>
+              <option>Remote only</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="chips">
+          <span class="chip active">Healthcare Operations</span>
+          <span class="chip active">Business & Systems</span>
+          <span class="chip active">Growth Operations</span>
+          <span class="chip">Program Management</span>
+          <span class="chip">SEO secondary only</span>
+        </div>
+
+        <button id="saveCriteria" class="primary-btn full">Save criteria</button>
+        <p id="saveMessage" class="save-message"></p>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading compact">
+          <div><div class="eyebrow">RESUME LIBRARY</div><h3>Resume selector</h3></div>
+        </div>
+
+        <div class="resume-grid">
+          <div class="resume-card"><span class="resume-letter">A</span><div><strong>Healthcare Operations</strong><p>Healthcare, ABA, behavioral health, patient and clinic operations.</p></div></div>
+          <div class="resume-card"><span class="resume-letter">B</span><div><strong>Business & Systems Operations</strong><p>Operations, systems, process improvement, program and implementation work.</p></div></div>
+          <div class="resume-card"><span class="resume-letter">C</span><div><strong>Growth Operations</strong><p>CRM, workflow automation, reporting, growth enablement and cross-functional execution.</p></div></div>
+        </div>
+      </section>
+
+      <section class="panel muted-panel">
+        <div class="eyebrow">VERSION 1 STATUS</div>
+        <h3>What works now</h3>
+        <p>This starter app is installable, works offline, saves your preferences, and tracks Save / Skip / Applied decisions locally on your phone.</p>
+        <p><strong>Next connection:</strong> a secure backend can feed live job matches into this dashboard. API keys should never be stored in the browser app.</p>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <a href="#" class="nav-item active">Today</a>
+      <a href="#criteria" class="nav-item">Criteria</a>
+      <a href="#criteria" class="nav-item">Resumes</a>
+    </nav>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
