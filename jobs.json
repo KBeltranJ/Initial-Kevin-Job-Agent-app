@@ -1,0 +1,39 @@
+{
+  "updatedAt": "2026-08-15T23:14:00-04:00",
+  "source": "starter",
+  "jobs": [
+    {
+      "id": "patient-ops-demo",
+      "title": "Patient Operations Manager",
+      "company": "Example Pediatric Health",
+      "location": "New York, NY · Hybrid",
+      "salary": "$120K–$140K",
+      "fit": 94,
+      "resume": "A",
+      "why": "Strong fit for healthcare operations, family-facing workflows, staffing coordination, process improvement and systems implementation.",
+      "applyUrl": ""
+    },
+    {
+      "id": "business-ops-demo",
+      "title": "Business Operations Manager",
+      "company": "Example Growth Company",
+      "location": "New York, NY · Hybrid",
+      "salary": "$115K–$135K",
+      "fit": 91,
+      "resume": "B",
+      "why": "Strong fit for process design, workflow automation, project management, reporting, SOPs and cross-functional execution.",
+      "applyUrl": ""
+    },
+    {
+      "id": "growth-ops-demo",
+      "title": "Growth Operations Manager",
+      "company": "Example Health Tech",
+      "location": "Remote · US",
+      "salary": "$110K–$130K",
+      "fit": 88,
+      "resume": "C",
+      "why": "Good match for CRM workflows, automation, reporting, funnel operations and growth enablement without making SEO the primary responsibility.",
+      "applyUrl": ""
+    }
+  ]
+}
