@@ -1,39 +1,66 @@
 {
-  "updatedAt": "2026-08-15T23:14:00-04:00",
-  "source": "starter",
+  "updatedAt": "2026-08-16T10:48:00-07:00",
+  "source": "daily-chatgpt-search",
   "jobs": [
     {
-      "id": "patient-ops-demo",
-      "title": "Patient Operations Manager",
-      "company": "Example Pediatric Health",
+      "id": "talkiatry-operations-manager-therapy-program",
+      "title": "Operations Manager, Therapy Program",
+      "company": "Talkiatry",
       "location": "New York, NY · Hybrid",
-      "salary": "$120K–$140K",
-      "fit": 94,
+      "salary": "$100,000–$125,000",
+      "fit": 93,
       "resume": "A",
-      "why": "Strong fit for healthcare operations, family-facing workflows, staffing coordination, process improvement and systems implementation.",
-      "applyUrl": ""
+      "why": "Excellent overlap with behavioral health operations, therapy-program scaling, cross-functional coordination, workflow improvement, staff support and healthcare systems work.",
+      "gap": "The role may expect deeper formal operations ownership and program-level KPI management than your current title suggests, so your application should emphasize the operational projects you actually own.",
+      "applyUrl": "https://click.appcast.io/t/zkRLzWdf5DKcoUmmTVT8OKEDXD_uIYDZN3jgyn2bJgzpC2DPExDEnK9R1uA9ivKuXH5Tjm55gVvOaK2Dj8k9eQ==?sar_id=29eocw7b&jpos=0"
     },
     {
-      "id": "business-ops-demo",
-      "title": "Business Operations Manager",
-      "company": "Example Growth Company",
-      "location": "New York, NY · Hybrid",
-      "salary": "$115K–$135K",
-      "fit": 91,
+      "id": "hachette-manager-business-operations",
+      "title": "Manager, Business Operations",
+      "company": "Hachette Livre",
+      "location": "New York, NY",
+      "salary": "$100,000–$120,000",
+      "fit": 90,
       "resume": "B",
-      "why": "Strong fit for process design, workflow automation, project management, reporting, SOPs and cross-functional execution.",
-      "applyUrl": ""
+      "why": "Strong fit for project management, client onboarding, business analysis, process improvement, SOPs and cross-functional execution — all central themes in your systems and operations work.",
+      "gap": "You will need to translate healthcare and marketing examples into industry-neutral operations outcomes and show measurable project ownership.",
+      "applyUrl": "https://to.indeed.com/aaqtjgkbbmjl"
     },
     {
-      "id": "growth-ops-demo",
-      "title": "Growth Operations Manager",
-      "company": "Example Health Tech",
-      "location": "Remote · US",
-      "salary": "$110K–$130K",
+      "id": "allied-digestive-manager-operations",
+      "title": "Manager of Operations",
+      "company": "Allied Digestive Health",
+      "location": "Brooklyn / Long Island, NY",
+      "salary": "$135,000–$145,000",
       "fit": 88,
+      "resume": "A",
+      "why": "Strong healthcare-operations match involving service delivery, multi-site operations, staffing, workflow execution and operational performance across the NY metro area.",
+      "gap": "The role may favor candidates with longer formal healthcare-management tenure and direct multi-site leadership, so this is a strong but slightly more senior target.",
+      "applyUrl": "https://click.appcast.io/t/3tbgZ7Ciwsvvh-k4ciLzk1kLFODRME5K43aVouQMr8WdAO06xwHB__5xSWsScrZGExGIAX-tqfmoYne3C6CZTA==?sar_id=29eocw7b&jpos=10"
+    },
+    {
+      "id": "duet-strategy-operations-manager-rcm",
+      "title": "Strategy & Operations Manager, RCM",
+      "company": "DUET",
+      "location": "New York, NY",
+      "salary": "$110,000–$140,000",
+      "fit": 84,
+      "resume": "A",
+      "why": "Healthcare plus strategy and operations is well aligned with your goal, and your workflow, systems, process-improvement and cross-functional background gives you a credible story.",
+      "gap": "Revenue-cycle-management specialization is the main gap; position your Medicaid, authorization, intake and healthcare workflow experience carefully without overstating RCM expertise.",
+      "applyUrl": "https://to.indeed.com/aasynz7sf9xd"
+    },
+    {
+      "id": "whatnot-marketing-operations-manager-growth",
+      "title": "Marketing Operations Manager, Growth Marketing",
+      "company": "Whatnot",
+      "location": "New York, NY",
+      "salary": "$140,000–$155,000",
+      "fit": 81,
       "resume": "C",
-      "why": "Good match for CRM workflows, automation, reporting, funnel operations and growth enablement without making SEO the primary responsibility.",
-      "applyUrl": ""
+      "why": "Good fit for growth enablement, CRM/process operations, reporting, automation and your prior marketing background without requiring SEO to be the main job.",
+      "gap": "Likely requires deeper dedicated marketing-operations and MarTech platform experience than your resume currently shows, so treat this as a growth-oriented reach.",
+      "applyUrl": "https://to.indeed.com/aa6xgqjzrkqv"
     }
   ]
 }
