@@ -44,7 +44,7 @@ const baseRenderAppliedForSearch=renderApplied;
 renderApplied=function(){baseRenderAppliedForSearch();injectAppliedSearch();filterAppliedJobs()};
 
 const baseShowViewForAppliedSearch=showView;
-showView=function(name){baseShowViewForAppliedSearch(name);if(name==="applied"){injectAppliedSearch();filterAppliedJobs();setTimeout(()=>document.getElementById("appliedSearch")?.focus({preventScroll:true}),0)}};
+showView=function(name){baseShowViewForAppliedSearch(name);if(name==="applied"){injectAppliedSearch();filterAppliedJobs()}};
 
 document.querySelectorAll('.nav-item[data-view="applied"]').forEach(btn=>{
   btn.addEventListener("click",()=>setTimeout(()=>{injectAppliedSearch();filterAppliedJobs()},0));
