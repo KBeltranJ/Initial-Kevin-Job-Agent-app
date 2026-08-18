@@ -25,7 +25,7 @@
           <div>
             <div class="eyebrow hero-eyebrow">TODAY</div>
             <h2>Find the right next role.</h2>
-            <p>Healthcare Operations, Business & Systems Operations, Growth Operations, and implementation-focused roles — with SEO kept secondary.</p>
+            <p>Healthcare Operations, Business & Systems Operations, Growth Operations, Business Analyst, and implementation-focused roles — with SEO kept secondary.</p>
           </div>
           <div class="hero-stat">
             <span id="matchCount">0</span>
@@ -75,7 +75,7 @@
         <section class="page-header">
           <div class="eyebrow">YOUR CRITERIA</div>
           <h2>Job preferences</h2>
-          <p>These settings now filter the jobs shown on your Today screen.</p>
+          <p>These settings filter the jobs shown on your Today screen.</p>
         </section>
 
         <section class="panel">
@@ -105,6 +105,7 @@
               <button type="button" class="chip active" data-track="A">Healthcare Operations</button>
               <button type="button" class="chip active" data-track="B">Business & Systems</button>
               <button type="button" class="chip active" data-track="C">Growth Operations</button>
+              <button type="button" class="chip active" data-track="D">Business Analyst / Systems Analyst</button>
               <button type="button" class="chip" data-track="P">Program / Implementation</button>
             </div>
             <p class="subtle">SEO-primary jobs stay excluded from the daily search.</p>
@@ -167,6 +168,21 @@
               </div>
             </div>
           </section>
+
+          <section class="resume-card" data-resume="D">
+            <span class="resume-letter">D</span>
+            <div class="resume-body">
+              <strong>Business Analyst / Systems Analyst</strong>
+              <p>Requirements translation, process mapping, testing, troubleshooting, reporting, CRM and web applications.</p>
+              <p class="resume-file-status" id="resumeStatusD">No file added yet.</p>
+              <div class="resume-actions">
+                <label class="action-btn upload-btn">Add / replace<input class="resume-file-input" type="file" data-resume-slot="D" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label>
+                <button class="action-btn resume-view" data-resume-slot="D" disabled>Open</button>
+                <button class="action-btn resume-download" data-resume-slot="D" disabled>Download</button>
+                <button class="action-btn resume-remove" data-resume-slot="D" disabled>Remove</button>
+              </div>
+            </div>
+          </section>
         </div>
 
         <section class="panel muted-panel privacy-note">
@@ -185,5 +201,34 @@
     </nav>
   </div>
   <script src="app.js"></script>
+  <script>
+    // One-time migration: include the new Business Analyst track for existing installs.
+    try {
+      if (!localStorage.getItem("kja_ba_track_migrated")) {
+        if (typeof criteria !== "undefined") {
+          criteria.tracks = Array.isArray(criteria.tracks) ? criteria.tracks : ["A","B","C"];
+          if (!criteria.tracks.includes("D")) criteria.tracks.push("D");
+          if (typeof saveJSON === "function") saveJSON("kja_criteria", criteria);
+          if (typeof applyCriteriaToUI === "function") applyCriteriaToUI();
+          if (typeof renderAll === "function") renderAll();
+        }
+        localStorage.setItem("kja_ba_track_migrated", "1");
+      }
+    } catch (e) { console.warn("BA criteria migration skipped", e); }
+
+    // Extend the existing local Resume Library to Resume D.
+    try {
+      const baseRefreshResumeLibrary = refreshResumeLibrary;
+      refreshResumeLibrary = async function() {
+        await baseRefreshResumeLibrary();
+        const record = await getResume("D").catch(() => null);
+        const status = document.getElementById("resumeStatusD");
+        const buttons = document.querySelectorAll('[data-resume-slot="D"].resume-view,[data-resume-slot="D"].resume-download,[data-resume-slot="D"].resume-remove');
+        if (status) status.textContent = record ? record.name : "No file added yet.";
+        buttons.forEach(btn => btn.disabled = !record);
+      };
+      refreshResumeLibrary();
+    } catch (e) { console.warn("Resume D extension skipped", e); }
+  </script>
 </body>
 </html>
