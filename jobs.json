@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-17T08:04:13-07:00",
-  "source": "daily-chatgpt-search",
+  "updatedAt": "2026-08-17T23:15:00-04:00",
+  "source": "verified-daily-search",
   "jobs": [
     {
       "id": "verana-health-operations-manager-nyc",
@@ -12,7 +12,9 @@
       "resume": "A",
       "why": "Excellent overlap with healthcare operations, project management, cross-functional execution, process improvement, implementation work and stakeholder coordination. Your healthcare/ABA operations plus systems-project background gives you a strong, coherent story.",
       "gap": "Verana prefers consulting or healthcare data/analytics experience, and SQL Workbench is a nice-to-have. Present SQL only as foundational/working knowledge and emphasize project delivery and healthcare operations.",
-      "applyUrl": "https://job-boards.greenhouse.io/veranahealth/jobs/8543624002"
+      "applyUrl": "https://job-boards.greenhouse.io/veranahealth/jobs/8543624002",
+      "verifiedAt": "2026-08-17T23:15:00-04:00",
+      "verificationSources": ["Verana Health Greenhouse application", "LinkedIn"]
     },
     {
       "id": "commure-operations-manager-patient-experience",
@@ -24,7 +26,9 @@
       "resume": "A",
       "why": "Strong healthcare-tech match combining patient experience, product launches, implementation, customer operations, workflow building, stakeholder management and internal process improvement. Your healthcare operations and systems implementation experience map well.",
       "gap": "The role wants 3–4 years in SaaS/GTM/Product/Customer Success operations and comfort prototyping with AI tools. Frame your cross-functional systems work clearly without overstating SaaS product ownership.",
-      "applyUrl": "https://jobs.ashbyhq.com/commure/ed8e4333-02f4-4aba-b000-3c677ffaa8ba"
+      "applyUrl": "https://jobs.ashbyhq.com/commure/ed8e4333-02f4-4aba-b000-3c677ffaa8ba",
+      "verifiedAt": "2026-08-17T23:15:00-04:00",
+      "verificationSources": ["Commure Ashby application", "LinkedIn", "Indeed"]
     },
     {
       "id": "iterative-health-manager-growth-operations",
@@ -36,19 +40,23 @@
       "resume": "A",
       "why": "Healthcare growth role centered on process ownership, pipeline reporting, cross-functional coordination, site launches, playbooks and operational scaling. It fits your healthcare background while using your project-management and process-improvement strengths.",
       "gap": "Clinical-trial and life-sciences experience is preferred, so the main challenge is domain specificity rather than the core operating work.",
-      "applyUrl": "https://job-boards.greenhouse.io/iterativehealth/jobs/4679528006"
+      "applyUrl": "https://job-boards.greenhouse.io/iterativehealth/jobs/4679528006",
+      "verifiedAt": "2026-08-17T23:15:00-04:00",
+      "verificationSources": ["Iterative Health Greenhouse application", "LinkedIn", "Indeed"]
     },
     {
-      "id": "finni-health-aba-regional-operations-manager",
-      "title": "ABA Regional Operations Manager",
-      "company": "Finni Health",
-      "location": "United States · Remote",
-      "salary": "$90,000–$115,000",
-      "fit": 90,
-      "resume": "A",
-      "why": "Very strong domain match: the role supports scaling ABA and mental-health practices through operational excellence, provider support, strategic initiatives and process improvement. Your ABA operations, intake, training and systems experience is directly relevant.",
-      "gap": "The range starts below your target, so pursue only if compensation can land at $100K+. The role may also expect broader practice-level financial and revenue optimization ownership.",
-      "applyUrl": "https://jobs.ashbyhq.com/finni-health/59675eaf-d0aa-44ca-be52-54402b4a3179"
+      "id": "playbook-client-operations-manager-nyc",
+      "title": "Client Operations Manager",
+      "company": "Playbook",
+      "location": "New York City, NY · Hybrid",
+      "salary": "$130,000–$150,000",
+      "fit": 86,
+      "resume": "B",
+      "why": "Strong match for client operations, cross-functional execution, SOPs, KPI reporting, team support, stakeholder communication, onboarding and process improvement. The role also aligns with your interest in operations work that is broader than SEO.",
+      "gap": "Playbook prefers 3+ years directly managing full-time employees plus hands-on budget and P&L experience, and the role supports commercial real-estate clients. Those are the biggest gaps to address carefully.",
+      "applyUrl": "https://jobs.lever.co/playbook/1548ff4e-9b6d-4786-9ba7-a48588de5cb1",
+      "verifiedAt": "2026-08-17T23:15:00-04:00",
+      "verificationSources": ["Playbook Lever careers page", "LinkedIn", "Indeed"]
     },
     {
       "id": "commure-systems-operations-manager",
@@ -60,7 +68,9 @@
       "resume": "B",
       "why": "Strong fit for Salesforce administration, workflow automation, CRM data quality, dashboards, reporting, process documentation and user training — all close to your business-systems and Power Apps/Salesforce experience.",
       "gap": "Commure asks for strong Salesforce administration and Salesforce CPQ plus ZoomInfo/Outreach experience. Those platform-specific requirements are the biggest risk; SQL is only a nice-to-have and should be described as foundational/working knowledge.",
-      "applyUrl": "https://jobs.ashbyhq.com/commure/1ceb9b7d-9a09-4283-8c03-d3577c3f2312"
+      "applyUrl": "https://jobs.ashbyhq.com/commure/1ceb9b7d-9a09-4283-8c03-d3577c3f2312",
+      "verifiedAt": "2026-08-17T23:15:00-04:00",
+      "verificationSources": ["Commure Ashby application", "LinkedIn"]
     },
     {
       "id": "brightwheel-business-operations-manager",
@@ -72,7 +82,9 @@
       "resume": "B",
       "why": "Good match for cross-functional initiatives, process improvement, customer/onboarding funnel work, structured problem-solving and using data to improve business performance at a growth-stage company.",
       "gap": "This role leans heavily toward management-consulting style analytics, financial/strategic modeling and executive-level problem solving, making it a reach relative to your strongest healthcare and systems matches.",
-      "applyUrl": "https://jobs.ashbyhq.com/brightwheel/4e8301cf-1552-434a-8c5c-f8391d6115bf"
+      "applyUrl": "https://jobs.ashbyhq.com/brightwheel/4e8301cf-1552-434a-8c5c-f8391d6115bf",
+      "verifiedAt": "2026-08-17T23:15:00-04:00",
+      "verificationSources": ["brightwheel Ashby application", "LinkedIn", "Indeed"]
     }
   ]
 }
