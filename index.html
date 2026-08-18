@@ -12,212 +12,83 @@
 <body>
   <div class="app-shell">
     <header class="topbar">
-      <div>
-        <div class="eyebrow">PERSONAL JOB DASHBOARD</div>
-        <h1>Kevin Job Agent</h1>
-      </div>
+      <div><div class="eyebrow">PERSONAL JOB DASHBOARD</div><h1>Kevin Job Agent</h1></div>
       <button id="installBtn" class="ghost-btn hidden">Install</button>
     </header>
 
     <main>
       <section id="todayView" class="view active-view">
         <section class="hero">
-          <div>
-            <div class="eyebrow hero-eyebrow">TODAY</div>
-            <h2>Find the right next role.</h2>
-            <p>Healthcare Operations, Business & Systems Operations, Growth Operations, Business Analyst, and implementation-focused roles — with SEO kept secondary.</p>
-          </div>
-          <div class="hero-stat">
-            <span id="matchCount">0</span>
-            <small>matches</small>
-          </div>
+          <div><div class="eyebrow hero-eyebrow">TODAY</div><h2>Find the right next role.</h2><p>Healthcare Operations, Business & Systems Operations, Growth Operations, Business Analyst, and implementation-focused roles — with SEO kept secondary.</p></div>
+          <div class="hero-stat"><span id="matchCount">0</span><small>matches</small></div>
         </section>
-
         <section class="quick-stats">
           <div class="stat-card"><span class="stat-label">Minimum salary</span><strong id="minSalaryDisplay">$100K</strong></div>
           <div class="stat-card"><span class="stat-label">Top fit</span><strong id="topFitDisplay">—</strong></div>
           <div class="stat-card"><span class="stat-label">Saved</span><strong id="savedCount">0</strong></div>
           <div class="stat-card"><span class="stat-label">Applied</span><strong id="appliedCount">0</strong></div>
         </section>
-
         <section class="section-heading">
-          <div>
-            <div class="eyebrow">DAILY MATCHES</div>
-            <h3>Recommended jobs</h3>
-            <p id="feedStatus" class="subtle"></p>
-          </div>
+          <div><div class="eyebrow">DAILY MATCHES</div><h3>Recommended jobs</h3><p id="feedStatus" class="subtle"></p></div>
           <button id="refreshJobs" class="text-btn">Refresh</button>
         </section>
-
         <div id="jobsList" class="jobs-list"></div>
       </section>
 
       <section id="savedView" class="view hidden">
-        <section class="page-header">
-          <div class="eyebrow">SAVED JOBS</div>
-          <h2>Jobs to come back to.</h2>
-          <p>Saved jobs stay here even after they leave the daily feed.</p>
-        </section>
+        <section class="page-header"><div class="eyebrow">SAVED JOBS</div><h2>Jobs to come back to.</h2><p>Saved jobs stay here even after they leave the daily feed.</p></section>
         <div id="savedJobsList" class="jobs-list"></div>
       </section>
 
       <section id="appliedView" class="view hidden">
-        <section class="page-header">
-          <div class="eyebrow">APPLICATION TRACKER</div>
-          <h2>Everything you applied to.</h2>
-          <p>Track the date, stage, notes, résumé used, and original job link.</p>
-          <button id="exportApplications" class="ghost-btn">Export applications</button>
-        </section>
+        <section class="page-header"><div class="eyebrow">APPLICATION TRACKER</div><h2>Everything you applied to.</h2><p>Track the date, stage, notes, résumé used, and original job link.</p><button id="exportApplications" class="ghost-btn">Export applications</button></section>
         <div id="appliedJobsList" class="jobs-list"></div>
       </section>
 
       <section id="criteriaView" class="view hidden">
-        <section class="page-header">
-          <div class="eyebrow">YOUR CRITERIA</div>
-          <h2>Job preferences</h2>
-          <p>These settings filter the jobs shown on your Today screen.</p>
-        </section>
-
+        <section class="page-header"><div class="eyebrow">YOUR CRITERIA</div><h2>Job preferences</h2><p>These settings filter the jobs shown on your Today screen.</p></section>
+        <div id="syncPanelMount"></div>
         <section class="panel">
           <div class="form-grid">
-            <label>Minimum salary
-              <select id="minSalary">
-                <option value="100000">$100,000+</option>
-                <option value="110000">$110,000+</option>
-                <option value="120000">$120,000+</option>
-                <option value="130000">$130,000+</option>
-              </select>
-            </label>
-
-            <label>Location
-              <select id="locationPref">
-                <option>NYC / Long Island / Remote</option>
-                <option>NYC only</option>
-                <option>NYC + Long Island</option>
-                <option>Remote only</option>
-              </select>
-            </label>
+            <label>Minimum salary<select id="minSalary"><option value="100000">$100,000+</option><option value="110000">$110,000+</option><option value="120000">$120,000+</option><option value="130000">$130,000+</option></select></label>
+            <label>Location<select id="locationPref"><option>NYC / Long Island / Remote</option><option>NYC only</option><option>NYC + Long Island</option><option>Remote only</option></select></label>
           </div>
-
-          <div class="criteria-group">
-            <span class="field-label">Role tracks</span>
-            <div class="chips" id="trackChips">
-              <button type="button" class="chip active" data-track="A">Healthcare Operations</button>
-              <button type="button" class="chip active" data-track="B">Business & Systems</button>
-              <button type="button" class="chip active" data-track="C">Growth Operations</button>
-              <button type="button" class="chip active" data-track="D">Business Analyst / Systems Analyst</button>
-              <button type="button" class="chip" data-track="P">Program / Implementation</button>
-            </div>
-            <p class="subtle">SEO-primary jobs stay excluded from the daily search.</p>
-          </div>
-
-          <button id="saveCriteria" class="primary-btn full">Save & apply criteria</button>
-          <p id="saveMessage" class="save-message"></p>
+          <div class="criteria-group"><span class="field-label">Role tracks</span><div class="chips" id="trackChips">
+            <button type="button" class="chip active" data-track="A">Healthcare Operations</button>
+            <button type="button" class="chip active" data-track="B">Business & Systems</button>
+            <button type="button" class="chip active" data-track="C">Growth Operations</button>
+            <button type="button" class="chip active" data-track="D">Business Analyst / Systems Analyst</button>
+            <button type="button" class="chip" data-track="P">Program / Implementation</button>
+          </div><p class="subtle">SEO-primary jobs stay excluded from the daily search.</p></div>
+          <button id="saveCriteria" class="primary-btn full">Save & apply criteria</button><p id="saveMessage" class="save-message"></p>
         </section>
       </section>
 
       <section id="resumesView" class="view hidden">
-        <section class="page-header">
-          <div class="eyebrow">RESUME LIBRARY</div>
-          <h2>Your résumés, one tap away.</h2>
-          <p>Résumé files are stored privately on this device, not in the public GitHub repository.</p>
-        </section>
-
+        <section class="page-header"><div class="eyebrow">RESUME LIBRARY</div><h2>Your résumés, one tap away.</h2><p>Résumés stay on this device and, when signed in, sync to your private cloud storage for access on your other devices.</p></section>
         <div class="resume-grid">
-          <section class="resume-card" data-resume="A">
-            <span class="resume-letter">A</span>
-            <div class="resume-body">
-              <strong>Healthcare Operations</strong>
-              <p>Healthcare, ABA, behavioral health, patient and clinic operations.</p>
-              <p class="resume-file-status" id="resumeStatusA">No file added yet.</p>
-              <div class="resume-actions">
-                <label class="action-btn upload-btn">Add / replace<input class="resume-file-input" type="file" data-resume-slot="A" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label>
-                <button class="action-btn resume-view" data-resume-slot="A" disabled>Open</button>
-                <button class="action-btn resume-download" data-resume-slot="A" disabled>Download</button>
-                <button class="action-btn resume-remove" data-resume-slot="A" disabled>Remove</button>
-              </div>
-            </div>
-          </section>
-
-          <section class="resume-card" data-resume="B">
-            <span class="resume-letter">B</span>
-            <div class="resume-body">
-              <strong>Business & Systems Operations</strong>
-              <p>Operations, systems, process improvement, program and implementation work.</p>
-              <p class="resume-file-status" id="resumeStatusB">No file added yet.</p>
-              <div class="resume-actions">
-                <label class="action-btn upload-btn">Add / replace<input class="resume-file-input" type="file" data-resume-slot="B" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label>
-                <button class="action-btn resume-view" data-resume-slot="B" disabled>Open</button>
-                <button class="action-btn resume-download" data-resume-slot="B" disabled>Download</button>
-                <button class="action-btn resume-remove" data-resume-slot="B" disabled>Remove</button>
-              </div>
-            </div>
-          </section>
-
-          <section class="resume-card" data-resume="C">
-            <span class="resume-letter">C</span>
-            <div class="resume-body">
-              <strong>Growth Operations</strong>
-              <p>CRM, workflow automation, reporting, growth enablement and cross-functional execution.</p>
-              <p class="resume-file-status" id="resumeStatusC">No file added yet.</p>
-              <div class="resume-actions">
-                <label class="action-btn upload-btn">Add / replace<input class="resume-file-input" type="file" data-resume-slot="C" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label>
-                <button class="action-btn resume-view" data-resume-slot="C" disabled>Open</button>
-                <button class="action-btn resume-download" data-resume-slot="C" disabled>Download</button>
-                <button class="action-btn resume-remove" data-resume-slot="C" disabled>Remove</button>
-              </div>
-            </div>
-          </section>
-
-          <section class="resume-card" data-resume="D">
-            <span class="resume-letter">D</span>
-            <div class="resume-body">
-              <strong>Business Analyst / Systems Analyst</strong>
-              <p>Requirements translation, process mapping, testing, troubleshooting, reporting, CRM and web applications.</p>
-              <p class="resume-file-status" id="resumeStatusD">No file added yet.</p>
-              <div class="resume-actions">
-                <label class="action-btn upload-btn">Add / replace<input class="resume-file-input" type="file" data-resume-slot="D" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label>
-                <button class="action-btn resume-view" data-resume-slot="D" disabled>Open</button>
-                <button class="action-btn resume-download" data-resume-slot="D" disabled>Download</button>
-                <button class="action-btn resume-remove" data-resume-slot="D" disabled>Remove</button>
-              </div>
-            </div>
-          </section>
+          <section class="resume-card" data-resume="A"><span class="resume-letter">A</span><div class="resume-body"><strong>Healthcare Operations</strong><p>Healthcare, ABA, behavioral health, patient and clinic operations.</p><p class="resume-file-status" id="resumeStatusA">No file added yet.</p><div class="resume-actions"><label class="action-btn upload-btn">Add / replace<input class="resume-file-input" type="file" data-resume-slot="A" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label><button class="action-btn resume-view" data-resume-slot="A" disabled>Open</button><button class="action-btn resume-download" data-resume-slot="A" disabled>Download</button><button class="action-btn resume-remove" data-resume-slot="A" disabled>Remove</button></div></div></section>
+          <section class="resume-card" data-resume="B"><span class="resume-letter">B</span><div class="resume-body"><strong>Business & Systems Operations</strong><p>Operations, systems, process improvement, program and implementation work.</p><p class="resume-file-status" id="resumeStatusB">No file added yet.</p><div class="resume-actions"><label class="action-btn upload-btn">Add / replace<input class="resume-file-input" type="file" data-resume-slot="B" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label><button class="action-btn resume-view" data-resume-slot="B" disabled>Open</button><button class="action-btn resume-download" data-resume-slot="B" disabled>Download</button><button class="action-btn resume-remove" data-resume-slot="B" disabled>Remove</button></div></div></section>
+          <section class="resume-card" data-resume="C"><span class="resume-letter">C</span><div class="resume-body"><strong>Growth Operations</strong><p>CRM, workflow automation, reporting, growth enablement and cross-functional execution.</p><p class="resume-file-status" id="resumeStatusC">No file added yet.</p><div class="resume-actions"><label class="action-btn upload-btn">Add / replace<input class="resume-file-input" type="file" data-resume-slot="C" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label><button class="action-btn resume-view" data-resume-slot="C" disabled>Open</button><button class="action-btn resume-download" data-resume-slot="C" disabled>Download</button><button class="action-btn resume-remove" data-resume-slot="C" disabled>Remove</button></div></div></section>
+          <section class="resume-card" data-resume="D"><span class="resume-letter">D</span><div class="resume-body"><strong>Business Analyst / Systems Analyst</strong><p>Requirements translation, process mapping, testing, troubleshooting, reporting, CRM and web applications.</p><p class="resume-file-status" id="resumeStatusD">No file added yet.</p><div class="resume-actions"><label class="action-btn upload-btn">Add / replace<input class="resume-file-input" type="file" data-resume-slot="D" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label><button class="action-btn resume-view" data-resume-slot="D" disabled>Open</button><button class="action-btn resume-download" data-resume-slot="D" disabled>Download</button><button class="action-btn resume-remove" data-resume-slot="D" disabled>Remove</button></div></div></section>
         </div>
-
-        <section class="panel muted-panel privacy-note">
-          <strong>Private by design</strong>
-          <p>Your uploaded résumé files stay in this app's local device storage. Clearing the app/browser data can remove them, so keep your originals elsewhere too.</p>
-        </section>
+        <section class="panel muted-panel privacy-note"><strong>Private by design</strong><p>Your cloud résumé files are stored in a private bucket protected by your account. The public GitHub site does not contain the résumé files.</p></section>
       </section>
     </main>
 
-    <nav class="bottom-nav" aria-label="App navigation">
-      <button type="button" class="nav-item active" data-view="today">Today</button>
-      <button type="button" class="nav-item" data-view="saved">Saved</button>
-      <button type="button" class="nav-item" data-view="applied">Applied</button>
-      <button type="button" class="nav-item" data-view="criteria">Criteria</button>
-      <button type="button" class="nav-item" data-view="resumes">Resumes</button>
-    </nav>
+    <nav class="bottom-nav" aria-label="App navigation"><button type="button" class="nav-item active" data-view="today">Today</button><button type="button" class="nav-item" data-view="saved">Saved</button><button type="button" class="nav-item" data-view="applied">Applied</button><button type="button" class="nav-item" data-view="criteria">Criteria</button><button type="button" class="nav-item" data-view="resumes">Resumes</button></nav>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="app.js"></script>
   <script>
-    // One-time migration: include the new Business Analyst track for existing installs.
     try {
       if (!localStorage.getItem("kja_ba_track_migrated")) {
-        if (typeof criteria !== "undefined") {
-          criteria.tracks = Array.isArray(criteria.tracks) ? criteria.tracks : ["A","B","C"];
-          if (!criteria.tracks.includes("D")) criteria.tracks.push("D");
-          if (typeof saveJSON === "function") saveJSON("kja_criteria", criteria);
-          if (typeof applyCriteriaToUI === "function") applyCriteriaToUI();
-          if (typeof renderAll === "function") renderAll();
-        }
+        criteria.tracks = Array.isArray(criteria.tracks) ? criteria.tracks : ["A","B","C"];
+        if (!criteria.tracks.includes("D")) criteria.tracks.push("D");
+        saveJSON("kja_criteria", criteria); applyCriteriaToUI(); renderAll();
         localStorage.setItem("kja_ba_track_migrated", "1");
       }
-    } catch (e) { console.warn("BA criteria migration skipped", e); }
-
-    // Extend the existing local Resume Library to Resume D.
-    try {
       const baseRefreshResumeLibrary = refreshResumeLibrary;
       refreshResumeLibrary = async function() {
         await baseRefreshResumeLibrary();
@@ -228,7 +99,8 @@
         buttons.forEach(btn => btn.disabled = !record);
       };
       refreshResumeLibrary();
-    } catch (e) { console.warn("Resume D extension skipped", e); }
+    } catch (e) { console.warn("Resume/criteria extension skipped", e); }
   </script>
+  <script src="sync.js"></script>
 </body>
 </html>
