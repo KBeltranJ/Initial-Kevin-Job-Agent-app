@@ -20,92 +20,168 @@
     </header>
 
     <main>
-      <section class="hero">
-        <div>
-          <div class="eyebrow">TODAY</div>
-          <h2>Find the right next role.</h2>
-          <p>Healthcare Operations, Business & Systems Operations, and Growth Operations — with SEO kept secondary.</p>
-        </div>
-        <div class="hero-stat">
-          <span id="matchCount">3</span>
-          <small>matches</small>
-        </div>
+      <section id="todayView" class="view active-view">
+        <section class="hero">
+          <div>
+            <div class="eyebrow hero-eyebrow">TODAY</div>
+            <h2>Find the right next role.</h2>
+            <p>Healthcare Operations, Business & Systems Operations, Growth Operations, and implementation-focused roles — with SEO kept secondary.</p>
+          </div>
+          <div class="hero-stat">
+            <span id="matchCount">0</span>
+            <small>matches</small>
+          </div>
+        </section>
+
+        <section class="quick-stats">
+          <div class="stat-card"><span class="stat-label">Minimum salary</span><strong id="minSalaryDisplay">$100K</strong></div>
+          <div class="stat-card"><span class="stat-label">Top fit</span><strong id="topFitDisplay">—</strong></div>
+          <div class="stat-card"><span class="stat-label">Saved</span><strong id="savedCount">0</strong></div>
+          <div class="stat-card"><span class="stat-label">Applied</span><strong id="appliedCount">0</strong></div>
+        </section>
+
+        <section class="section-heading">
+          <div>
+            <div class="eyebrow">DAILY MATCHES</div>
+            <h3>Recommended jobs</h3>
+            <p id="feedStatus" class="subtle"></p>
+          </div>
+          <button id="refreshJobs" class="text-btn">Refresh</button>
+        </section>
+
+        <div id="jobsList" class="jobs-list"></div>
       </section>
 
-      <section class="quick-stats">
-        <div class="stat-card"><span class="stat-label">Minimum salary</span><strong id="minSalaryDisplay">$100K</strong></div>
-        <div class="stat-card"><span class="stat-label">Top fit</span><strong id="topFitDisplay">94%</strong></div>
-        <div class="stat-card"><span class="stat-label">Applied</span><strong id="appliedCount">0</strong></div>
+      <section id="savedView" class="view hidden">
+        <section class="page-header">
+          <div class="eyebrow">SAVED JOBS</div>
+          <h2>Jobs to come back to.</h2>
+          <p>Saved jobs stay here even after they leave the daily feed.</p>
+        </section>
+        <div id="savedJobsList" class="jobs-list"></div>
       </section>
 
-      <section class="section-heading">
-        <div><div class="eyebrow">DAILY MATCHES</div><h3>Recommended jobs</h3></div>
-        <button id="resetDemo" class="text-btn">Reset demo</button>
+      <section id="appliedView" class="view hidden">
+        <section class="page-header">
+          <div class="eyebrow">APPLICATION TRACKER</div>
+          <h2>Everything you applied to.</h2>
+          <p>Track the date, stage, notes, résumé used, and original job link.</p>
+          <button id="exportApplications" class="ghost-btn">Export applications</button>
+        </section>
+        <div id="appliedJobsList" class="jobs-list"></div>
       </section>
 
-      <div id="jobsList" class="jobs-list"></div>
+      <section id="criteriaView" class="view hidden">
+        <section class="page-header">
+          <div class="eyebrow">YOUR CRITERIA</div>
+          <h2>Job preferences</h2>
+          <p>These settings now filter the jobs shown on your Today screen.</p>
+        </section>
 
-      <section id="criteria" class="panel">
-        <div class="section-heading compact">
-          <div><div class="eyebrow">YOUR CRITERIA</div><h3>Job preferences</h3></div>
-        </div>
+        <section class="panel">
+          <div class="form-grid">
+            <label>Minimum salary
+              <select id="minSalary">
+                <option value="100000">$100,000+</option>
+                <option value="110000">$110,000+</option>
+                <option value="120000">$120,000+</option>
+                <option value="130000">$130,000+</option>
+              </select>
+            </label>
 
-        <div class="form-grid">
-          <label>Minimum salary
-            <select id="minSalary">
-              <option value="100000">$100,000+</option>
-              <option value="110000">$110,000+</option>
-              <option value="120000">$120,000+</option>
-              <option value="130000">$130,000+</option>
-            </select>
-          </label>
+            <label>Location
+              <select id="locationPref">
+                <option>NYC / Long Island / Remote</option>
+                <option>NYC only</option>
+                <option>NYC + Long Island</option>
+                <option>Remote only</option>
+              </select>
+            </label>
+          </div>
 
-          <label>Location
-            <select id="locationPref">
-              <option>NYC / Long Island / Remote</option>
-              <option>NYC only</option>
-              <option>NYC + Long Island</option>
-              <option>Remote only</option>
-            </select>
-          </label>
-        </div>
+          <div class="criteria-group">
+            <span class="field-label">Role tracks</span>
+            <div class="chips" id="trackChips">
+              <button type="button" class="chip active" data-track="A">Healthcare Operations</button>
+              <button type="button" class="chip active" data-track="B">Business & Systems</button>
+              <button type="button" class="chip active" data-track="C">Growth Operations</button>
+              <button type="button" class="chip" data-track="P">Program / Implementation</button>
+            </div>
+            <p class="subtle">SEO-primary jobs stay excluded from the daily search.</p>
+          </div>
 
-        <div class="chips">
-          <span class="chip active">Healthcare Operations</span>
-          <span class="chip active">Business & Systems</span>
-          <span class="chip active">Growth Operations</span>
-          <span class="chip">Program Management</span>
-          <span class="chip">SEO secondary only</span>
-        </div>
-
-        <button id="saveCriteria" class="primary-btn full">Save criteria</button>
-        <p id="saveMessage" class="save-message"></p>
+          <button id="saveCriteria" class="primary-btn full">Save & apply criteria</button>
+          <p id="saveMessage" class="save-message"></p>
+        </section>
       </section>
 
-      <section class="panel">
-        <div class="section-heading compact">
-          <div><div class="eyebrow">RESUME LIBRARY</div><h3>Resume selector</h3></div>
-        </div>
+      <section id="resumesView" class="view hidden">
+        <section class="page-header">
+          <div class="eyebrow">RESUME LIBRARY</div>
+          <h2>Your résumés, one tap away.</h2>
+          <p>Résumé files are stored privately on this device, not in the public GitHub repository.</p>
+        </section>
 
         <div class="resume-grid">
-          <div class="resume-card"><span class="resume-letter">A</span><div><strong>Healthcare Operations</strong><p>Healthcare, ABA, behavioral health, patient and clinic operations.</p></div></div>
-          <div class="resume-card"><span class="resume-letter">B</span><div><strong>Business & Systems Operations</strong><p>Operations, systems, process improvement, program and implementation work.</p></div></div>
-          <div class="resume-card"><span class="resume-letter">C</span><div><strong>Growth Operations</strong><p>CRM, workflow automation, reporting, growth enablement and cross-functional execution.</p></div></div>
-        </div>
-      </section>
+          <section class="resume-card" data-resume="A">
+            <span class="resume-letter">A</span>
+            <div class="resume-body">
+              <strong>Healthcare Operations</strong>
+              <p>Healthcare, ABA, behavioral health, patient and clinic operations.</p>
+              <p class="resume-file-status" id="resumeStatusA">No file added yet.</p>
+              <div class="resume-actions">
+                <label class="action-btn upload-btn">Add / replace<input class="resume-file-input" type="file" data-resume-slot="A" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label>
+                <button class="action-btn resume-view" data-resume-slot="A" disabled>Open</button>
+                <button class="action-btn resume-download" data-resume-slot="A" disabled>Download</button>
+                <button class="action-btn resume-remove" data-resume-slot="A" disabled>Remove</button>
+              </div>
+            </div>
+          </section>
 
-      <section class="panel muted-panel">
-        <div class="eyebrow">VERSION 1 STATUS</div>
-        <h3>What works now</h3>
-        <p>This starter app is installable, works offline, saves your preferences, and tracks Save / Skip / Applied decisions locally on your phone.</p>
-        <p><strong>Next connection:</strong> a secure backend can feed live job matches into this dashboard. API keys should never be stored in the browser app.</p>
+          <section class="resume-card" data-resume="B">
+            <span class="resume-letter">B</span>
+            <div class="resume-body">
+              <strong>Business & Systems Operations</strong>
+              <p>Operations, systems, process improvement, program and implementation work.</p>
+              <p class="resume-file-status" id="resumeStatusB">No file added yet.</p>
+              <div class="resume-actions">
+                <label class="action-btn upload-btn">Add / replace<input class="resume-file-input" type="file" data-resume-slot="B" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label>
+                <button class="action-btn resume-view" data-resume-slot="B" disabled>Open</button>
+                <button class="action-btn resume-download" data-resume-slot="B" disabled>Download</button>
+                <button class="action-btn resume-remove" data-resume-slot="B" disabled>Remove</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="resume-card" data-resume="C">
+            <span class="resume-letter">C</span>
+            <div class="resume-body">
+              <strong>Growth Operations</strong>
+              <p>CRM, workflow automation, reporting, growth enablement and cross-functional execution.</p>
+              <p class="resume-file-status" id="resumeStatusC">No file added yet.</p>
+              <div class="resume-actions">
+                <label class="action-btn upload-btn">Add / replace<input class="resume-file-input" type="file" data-resume-slot="C" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label>
+                <button class="action-btn resume-view" data-resume-slot="C" disabled>Open</button>
+                <button class="action-btn resume-download" data-resume-slot="C" disabled>Download</button>
+                <button class="action-btn resume-remove" data-resume-slot="C" disabled>Remove</button>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="panel muted-panel privacy-note">
+          <strong>Private by design</strong>
+          <p>Your uploaded résumé files stay in this app's local device storage. Clearing the app/browser data can remove them, so keep your originals elsewhere too.</p>
+        </section>
       </section>
     </main>
 
-    <nav class="bottom-nav">
-      <a href="#" class="nav-item active">Today</a>
-      <a href="#criteria" class="nav-item">Criteria</a>
-      <a href="#criteria" class="nav-item">Resumes</a>
+    <nav class="bottom-nav" aria-label="App navigation">
+      <button type="button" class="nav-item active" data-view="today">Today</button>
+      <button type="button" class="nav-item" data-view="saved">Saved</button>
+      <button type="button" class="nav-item" data-view="applied">Applied</button>
+      <button type="button" class="nav-item" data-view="criteria">Criteria</button>
+      <button type="button" class="nav-item" data-view="resumes">Resumes</button>
     </nav>
   </div>
   <script src="app.js"></script>
