@@ -51,7 +51,7 @@ function jobCard(job){
     <div class="meta"><span>${esc(job.location)}</span><span>${esc(job.salary)}</span></div>
     <p>${esc(job.why)}</p>${gap}
     <div class="resume-rec">Recommended Resume: <strong>${esc(job.resume)}</strong></div>
-    <div class="actions">${applyButton}<button class="action-btn ${current==="saved"?"selected":""}" data-job="${esc(job.id)}" data-status="saved">Save</button><button class="action-btn ${current==="skipped"?"selected":""}" data-job="${esc(job.id)}" data-status="skipped">Skip</button><button class="action-btn ${current==="applied"?"selected":""}" data-job="${esc(job.id)}" data-status="applied">Applied</button></div>
+    <div class="actions">${applyButton}<button class="action-btn ${current==="saved"?"selected":""}" data-job="${esc(job.id)}" data-status="saved">Save</button><button class="action-btn ${current==="skipped"?"selected":""}" data-job="${esc(job.id)}" data-status="skipped">Skip</button><button class="action-btn ${current==="expired"?"selected":""}" data-job="${esc(job.id)}" data-status="expired" title="The job link has expired or no longer exists">Link Expired / Not Found</button><button class="action-btn ${current==="applied"?"selected":""}" data-job="${esc(job.id)}" data-status="applied">Applied</button></div>
   </article>`;
 }
 
