@@ -1,0 +1,17 @@
+{
+  "purpose": "Deduplication only. No personal profile, notes, resume data, application dates, stages, user IDs, email addresses, phone numbers, or other private application data are stored here.",
+  "jobs": [
+    {"jobId":"permitflow-product-operations-manager","title":"Product Operations Manager","company":"PermitFlow"},
+    {"jobId":"custom-1787107065838-dk1uv0","title":"Marketing Manager","company":"Carol Care"},
+    {"jobId":"whatnot-marketing-operations-manager-growth","title":"Marketing Operations Manager, Growth Marketing","company":"Whatnot"},
+    {"jobId":"talkiatry-operations-manager-therapy-program","title":"Operations Manager, Therapy Program","company":"Talkiatry"},
+    {"jobId":"january-client-operations-manager","title":"Client Operations Manager","company":"January"},
+    {"jobId":"ambience-healthcare-business-operations-lead","title":"Business Operations Lead","company":"Ambience Healthcare"},
+    {"jobId":"iterative-health-bd-operations-manager-cardiology","title":"Business Development Operations Manager - Cardiology","company":"Iterative Health"},
+    {"jobId":"headway-business-operations-lead","title":"Business Operations Lead","company":"Headway"},
+    {"jobId":"duet-strategy-operations-manager-rcm","title":"Strategy & Operations Manager, RCM","company":"Duet"},
+    {"jobId":"custom-1787026161831-o7cwdv","title":"Operations & Resource Manager","company":"Craft"},
+    {"jobId":"playbook-client-operations-manager-nyc","title":"Client Operations Manager","company":"Playbook"},
+    {"jobId":"verana-health-operations-manager-nyc","title":"Operations Manager","company":"Verana Health"}
+  ]
+}
