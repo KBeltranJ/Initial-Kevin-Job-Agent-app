@@ -1,1 +1,150 @@
-{"updatedAt":"2026-10-07T08:03:50-04:00","source":"daily-chatgpt-search","jobs":[{"id":"latent-implementation-project-manager","title":"Implementation Project Manager","company":"Latent","location":"United States · Remote","salary":"$115,000–$175,000 + equity","fit":95,"resume":"B","why":"Healthcare SaaS implementation spanning clinical operations, IT, integrations, project plans, risk logs, KPIs, training readiness, change management and cross-functional delivery.","gap":"EHR integration depth (Epic/Cerner/Meditech) and formal PMP/CSM credentials are preferred rather than required.","applyUrl":"https://jobs.ashbyhq.com/latent/01879991-18a8-4278-9c26-459d1aee94f9/"},{"id":"courier-health-implementation-manager","title":"Implementation Manager","company":"Courier Health","location":"New York, NY · Office-first 4 days/week","salary":"$140,000–$175,000 + equity","fit":93,"resume":"B","why":"Health-tech implementation ownership from discovery through go-live, with requirements, workflows, client training, documentation, CRM exposure and Product/Engineering partnership.","gap":"The role expects strong technical fluency with APIs, data mapping and system architecture plus 5+ years of customer-facing SaaS implementation experience.","applyUrl":"https://job-boards.greenhouse.io/courierhealth/jobs/4830159007"},{"id":"welltheory-implementation-manager","title":"Implementation Manager","company":"WellTheory","location":"United States · Remote","salary":"$100,000–$115,000 + equity","fit":92,"resume":"A","why":"Digital-health client launches, requirements gathering, cross-functional coordination, implementation risk management and scalable playbook development align closely with healthcare operations and systems work.","gap":"They seek 5+ years in implementation/client onboarding/program management, ideally digital health or benefits.","applyUrl":"https://jobs.ashbyhq.com/welltheory/ea27d142-168f-49e2-800e-a23720edd497/"},{"id":"vns-health-project-manager-business-implementation","title":"Project Manager, Business Implementation","company":"VNS Health","location":"Manhattan, NY · Hybrid 3 days/week","salary":"$93,400–$116,800","fit":91,"resume":"A","why":"Strong match for healthcare operations transformation: current-state process mapping, requirements, process redesign, systems/data initiatives, go-live readiness, training, adoption and post-launch performance.","gap":"Minimum five years progressive healthcare consulting/operations/financial-analysis experience is requested; compensation clears $100K only in the upper part of the range.","applyUrl":"https://www.monster.com/job-openings/project-manager-business-implementation-new-york-ny--307413d6-7570-4248-8eda-b8aca9c6f56b"},{"id":"flip-implementation-manager-healthcare","title":"Implementation Manager, Healthcare","company":"Flip","location":"Brooklyn, NY · On-site 5 days/week","salary":"$110,000–$140,000 + bonus/equity eligibility","fit":89,"resume":"B","why":"Healthcare implementation, workflow configuration, testing/QA, go-live readiness and cross-functional work with Customer Success, Product and Engineering fit the systems-operations track.","gap":"More technical than Kevin's core background, with integrations, telephony/IVR and healthcare-platform configuration; also requires five days per week on-site.","applyUrl":"https://job-boards.greenhouse.io/flip/jobs/5373569008"}]}
+{
+  "updatedAt": "2026-10-18T12:47:44.180Z",
+  "source": "daily-chatgpt-search",
+  "jobs": [
+    {
+      "id": "finni-health-senior-manager-practice-operations",
+      "title": "Senior Manager, Practice Operations",
+      "company": "Finni Health",
+      "location": "United States · Remote",
+      "salary": "$130,000–$150,000 + equity",
+      "fit": 94,
+      "resume": "A",
+      "why": "Direct ABA practice operations match: payer enrollment, credentialing workflow redesign, SOPs, quality checks, reporting, and Product collaboration.",
+      "gap": "First assignment requires deeper hands-on multi-state credentialing and payer enrollment expertise; senior ownership expectations.",
+      "applyUrl": "https://jobs.ashbyhq.com/finni-health/92b2a283-3ada-4523-a292-2c30d9e14248"
+    },
+    {
+      "id": "conduit-health-manager-patient-outreach-intake-operations",
+      "title": "Manager, Patient Outreach & Intake Operations",
+      "company": "Conduit Health",
+      "location": "New York City · Hybrid",
+      "salary": "$120,000–$150,000",
+      "fit": 93,
+      "resume": "A",
+      "why": "ABA intake, insurance eligibility, outreach and re-engagement, staff training, queue management, workflow automation and operational reporting align closely.",
+      "gap": "Direct team management, BPO vendor oversight, staffing forecasts and quantified conversion ownership are emphasized.",
+      "applyUrl": "https://jobs.ashbyhq.com/conduit-health/3035e45f-e41b-413b-bb81-a3c8db503424/"
+    },
+    {
+      "id": "leap-clinical-strategy-operations-manager",
+      "title": "Clinical Strategy & Operations Manager",
+      "company": "Leap",
+      "location": "New York City · Hybrid",
+      "salary": "$110,000–$165,000 + equity",
+      "fit": 91,
+      "resume": "A",
+      "why": "Runs clinical intake and activation playbooks, training for client launches, KPI dashboards, cross-team coordination and operational automation.",
+      "gap": "Specialty-pharmacy domain knowledge and 4–5 years of dedicated strategy or business operations work.",
+      "applyUrl": "https://jobs.ashbyhq.com/leap/bb7fde3a-f2a4-47ed-be4d-a5663f2c29ec"
+    },
+    {
+      "id": "talkiatry-senior-manager-operational-programs",
+      "title": "Senior Manager, Operational Programs",
+      "company": "Talkiatry",
+      "location": "New York, NY · Hybrid",
+      "salary": "$130,000–$165,000 + bonus",
+      "fit": 90,
+      "resume": "A",
+      "why": "Behavioral-health operations programs, clinician onboarding, dashboards, workflow redesign, low-code automation and cross-functional delivery.",
+      "gap": "Requires 4–6+ years and independently owned measurable programs at significant scale.",
+      "applyUrl": "https://jobs.ashbyhq.com/talkiatry/b798eb26-5267-42e4-8b44-82fdbfab0f0a"
+    },
+    {
+      "id": "centivo-commercial-operations-manager",
+      "title": "Commercial Operations Manager",
+      "company": "Centivo",
+      "location": "United States · Remote",
+      "salary": "$110,000–$120,000 + bonus/equity",
+      "fit": 89,
+      "resume": "B",
+      "why": "Strong Salesforce/BA fit: requirements, current/future-state process maps, UAT, SharePoint, SOPs, training, implementation and cross-functional change.",
+      "gap": "Posting asks for 5 years of regulated healthcare/benefits experience and independent complex initiative leadership.",
+      "applyUrl": "https://jobs.ashbyhq.com/centivo/a3e68280-67ae-4e0f-864e-5af0dca04c14"
+    },
+    {
+      "id": "oneimaging-operations-manager-member-services-knowledge-management",
+      "title": "Operations Manager, Member Services (Knowledge Management)",
+      "company": "OneImaging",
+      "location": "United States · Remote",
+      "salary": "$100,000–$115,000 + equity",
+      "fit": 88,
+      "resume": "A",
+      "why": "Maps end-to-end patient/member journeys, governs knowledge bases, documents processes and translates service pain points into Product changes.",
+      "gap": "Five-plus years of knowledge governance/process mapping and ownership of a formal knowledge base; radiology background preferred.",
+      "applyUrl": "https://job-boards.greenhouse.io/oneimaging/jobs/4451509009"
+    },
+    {
+      "id": "oneimaging-customer-success-operations-manager",
+      "title": "Customer Success Operations Manager",
+      "company": "OneImaging",
+      "location": "United States · Remote",
+      "salary": "$105,000–$120,000 + equity",
+      "fit": 87,
+      "resume": "B",
+      "why": "Salesforce opportunity hygiene, CRM data integrity, customer onboarding, reporting, playbooks, knowledge management and workflow automation.",
+      "gap": "Four-plus years in dedicated CS/Revenue Operations and designing variable incentive plans.",
+      "applyUrl": "https://job-boards.greenhouse.io/oneimaging/jobs/4430000009"
+    },
+    {
+      "id": "chamber-cardio-program-manager-care-operations",
+      "title": "Program Manager, Care Operations",
+      "company": "Chamber Cardio",
+      "location": "US · Remote (ET/CT hours; NYC eligible)",
+      "salary": "Not disclosed by employer; third-party estimate $90,000–$150,000 (unverified)",
+      "fit": 86,
+      "resume": "A",
+      "why": "Healthcare program launches, SOPs, clinical workflows, AI-enabled tooling, project timelines and cross-functional execution match healthcare systems work.",
+      "gap": "Value-based cardiology and population-health domain experience; salary above $100K not employer-confirmed.",
+      "applyUrl": "https://jobs.ashbyhq.com/chambercardio/a0a30aae-48a6-4587-ae36-065bb6f66cb1"
+    },
+    {
+      "id": "lyra-health-operations-manager-product-implementation",
+      "title": "Operations Manager, Product Implementation",
+      "company": "Lyra Health",
+      "location": "United States · Remote",
+      "salary": "$106,000–$162,000",
+      "fit": 82,
+      "resume": "A",
+      "why": "Behavioral-health product rollouts, provider operations, Salesforce/EHR workflows, training and change management are relevant.",
+      "gap": "Stretch: 8+ years required and direct management of senior product implementation staff with deep software delivery expertise.",
+      "applyUrl": "https://careers.lyrahealth.com/en/job/remote/operations-manager-product-implementation/43250/101916802928"
+    },
+    {
+      "id": "candid-manager-strategy-operations",
+      "title": "Manager, Strategy & Operations",
+      "company": "Candid",
+      "location": "New York, NY · US/Canada applicants accepted; work arrangement to confirm; up to 30% travel",
+      "salary": "$155,000–$170,000 + equity",
+      "fit": 82,
+      "resume": "B",
+      "why": "Healthcare technology business operations, workflow optimization, AI-enabled process improvements, partner operations and cross-functional programs.",
+      "gap": "Five-plus years in strategic operations, executive-facing project ownership, 30% travel and stronger advanced analytics preferred.",
+      "applyUrl": "https://job-boards.greenhouse.io/candid/jobs/8604804002"
+    },
+    {
+      "id": "h1-senior-implementation-manager",
+      "title": "Sr. Implementation Manager",
+      "company": "H1",
+      "location": "United States · Remote",
+      "salary": "$115,000–$140,000 + equity",
+      "fit": 81,
+      "resume": "B",
+      "why": "Healthcare SaaS project plans, customer implementation, KPI tracking, stakeholder communication and Product/Engineering coordination.",
+      "gap": "Five-plus years project management and 2+ years direct healthcare SaaS/data implementation experience.",
+      "applyUrl": "https://jobs.lever.co/h1/021980e9-74d3-4c4f-b05c-32c634704c99"
+    },
+    {
+      "id": "gitlab-senior-customer-success-operations-manager",
+      "title": "Senior Customer Success Operations Manager",
+      "company": "GitLab",
+      "location": "United States · Remote",
+      "salary": "$104,800–$176,400",
+      "fit": 80,
+      "resume": "B",
+      "why": "Systems-minded operations role involving cross-functional reporting, process redesign, documentation, customer health and change management.",
+      "gap": "Four-plus years in Sales/Revenue Operations or equivalent, renewals/capacity planning and dedicated SaaS customer success operations.",
+      "applyUrl": "https://job-boards.greenhouse.io/gitlab/jobs/8604996002"
+    }
+  ]
+}
