@@ -1,45 +1,58 @@
 {
-  "updatedAt": "2026-10-22T22:25:00-04:00",
-  "source": "ba-focus-initial-verified-search",
+  "updatedAt": "2026-10-23T12:18:31.810Z",
+  "source": "daily-chatgpt-search",
   "jobs": [
+    {
+      "id": "broadridge-senior-process-improvement-analyst-jr1085322",
+      "title": "Senior Process Improvement Analyst (Hybrid)",
+      "company": "Broadridge",
+      "location": "New York, NY or Edgewood, Long Island — hybrid",
+      "salary": "$115,000–$120,000",
+      "fit": 90,
+      "resume": "D",
+      "track": "IMP",
+      "why": "Direct match for process discovery, stakeholder interviews, current/future-state mapping, Excel analysis, workflow automation, testing and rollout; posting accepts 2–4 years of related analysis/operations experience and does not require prior fintech expertise.",
+      "gap": "Senior title; executive-facing transformation, formal process-mapping artifacts and quantified benefits at enterprise scale need strong examples. Lean/Six Sigma is preferred, not required.",
+      "applyUrl": "https://broadridge.wd5.myworkdayjobs.com/en-US/Careers/job/New-York-NY/Senior-Process-Transformation-Analyst--Hybrid-_JR1085322"
+    },
+    {
+      "id": "makai-labs-business-analyst-e170b3c0",
+      "title": "Business Analyst",
+      "company": "Makai Labs",
+      "location": "US remote (New York eligible)",
+      "salary": "$100,000–$110,000",
+      "fit": 84,
+      "resume": "D",
+      "track": "BA",
+      "why": "Client discovery, workflow diagrams, functional specifications, feature testing, user training and post-launch troubleshooting closely match CRM integration and operational system work in the October application résumé.",
+      "gap": "Posting requests 3+ years in a BA, financial analyst or computer-science role; current résumé documents about one year in the formal BA title, though other project/analytics work is relevant. Agile product lifecycle ownership is less established.",
+      "applyUrl": "https://jobs.ashbyhq.com/makai-labs/e170b3c0-42c9-4bab-8afb-69c3b2f714b6/"
+    },
+    {
+      "id": "applied-adhesives-business-systems-analyst-6337738",
+      "title": "Business Systems Analyst",
+      "company": "Applied Adhesives",
+      "location": "US remote; Central Time working hours, approximately 5% travel",
+      "salary": "$110,000–$130,000",
+      "fit": 81,
+      "resume": "D",
+      "track": "BSA",
+      "why": "Requirements discovery, business-to-IT translation, workflow analysis, automation assessment, CRM integrations, UAT and training align with documented Monday.com, Dynamics 365, Power Automate and reporting work.",
+      "gap": "Requires 3+ years of analysis/related work and 3–4 years of direct or indirect project management; formal BA tenure is shorter and enterprise AI/ERP planning is a stretch. Current posting found through reputable third-party listing; original employer application page not independently confirmed.",
+      "applyUrl": "https://remotive.com/remote/jobs/all-others/business-systems-analyst-6337738"
+    },
     {
       "id": "madhive-business-analyst-319ce3d7",
       "title": "Business Analyst",
       "company": "Madhive",
-      "location": "New York, NY — hybrid (office-intensive)",
-      "salary": "$95,000–$120,000",
-      "fit": 86,
+      "location": "New York, NY — hybrid, 4–5 days per week onsite",
+      "salary": "$95,000–$120,000 (lower end below target)",
+      "fit": 79,
       "resume": "D",
       "track": "BA",
-      "why": "Strong cross-functional analysis, reporting, stakeholder coordination and media technology background; BA duties include project plans and executive-ready materials.",
-      "gap": "CEO-facing strategic execution role, more executive-level business planning than pure requirements/UAT; office attendance appears frequent.",
+      "why": "Media/advertising background, cross-functional execution, project tracking, performance reporting and stakeholder presentations support the role's 2–4 year related-experience preference.",
+      "gap": "CEO-facing strategy, board/investor presentation production and financial planning are less established than systems requirements/UAT; 4–5 onsite days and offers below $100K are risks.",
       "applyUrl": "https://jobs.ashbyhq.com/madhive/319ce3d7-c2b7-4963-a31b-5d8d73293745"
-    },
-    {
-      "id": "32bj-benefit-funds-business-analyst-ii-2020",
-      "title": "Business Analyst II",
-      "company": "Building Service 32BJ Benefit Funds",
-      "location": "New York, NY — on-site",
-      "salary": "$100,000–$110,000",
-      "fit": 74,
-      "resume": "D",
-      "track": "BA",
-      "why": "Eliciting requirements, process mapping, vendor coordination, UAT, production support and training closely match recent healthcare systems responsibilities.",
-      "gap": "Posting calls for 3 years SDLC, 2 years BABOK-based experience and a CS/related degree; current BA résumé lists Communications. Verify equivalent experience eligibility before prioritizing.",
-      "applyUrl": "https://www.builtinnyc.com/job/business-analyst-ii/11370212"
-    },
-    {
-      "id": "first-citizens-business-planning-support-analyst-882af174",
-      "title": "Business Planning & Support Analyst",
-      "company": "First Citizens Bank",
-      "location": "New York, NY — hybrid",
-      "salary": "$118,000–$146,000",
-      "fit": 73,
-      "resume": "D",
-      "track": "BA",
-      "why": "Strong overlap in business process analysis, project plans, reporting, stakeholder communication and documenting improvement initiatives.",
-      "gap": "Four years of qualifying project planning/financial-services industry experience appears required; confirm whether prior TIAA and cross-industry project work satisfy this condition.",
-      "applyUrl": "https://www.indeed.com/viewjob?jk=882af1740dda4713"
     }
   ]
 }
