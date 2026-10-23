@@ -1,0 +1,104 @@
+{
+  "version": "2026-10-22-ba-v2",
+  "source": "Latest BA application resume: Kevin Beltran Rsume .pdf (October 2026)",
+  "purpose": "Non-sensitive job-search configuration; public repository",
+  "objective": "Find full-time Business Analyst-focused work rather than operations management or SEO-first roles.",
+  "locationPreferences": [
+    "New York City (all boroughs)",
+    "Long Island",
+    "US remote",
+    "NYC/Long Island hybrid"
+  ],
+  "salary": {
+    "targetMinimum": 100000,
+    "includeIfPostedRangeReachesTarget": true,
+    "unknownSalary": "Consider only unusually strong matches; label salary not provided"
+  },
+  "priorityTracks": [
+    {
+      "id": "BA",
+      "share": 35,
+      "titles": [
+        "Business Analyst",
+        "Business Process Analyst",
+        "Functional Analyst",
+        "Operations Business Analyst"
+      ]
+    },
+    {
+      "id": "BSA",
+      "share": 30,
+      "titles": [
+        "Business Systems Analyst",
+        "CRM Business Analyst",
+        "Applications Business Analyst",
+        "Dynamics 365 Business Analyst"
+      ]
+    },
+    {
+      "id": "IT",
+      "share": 20,
+      "titles": [
+        "IT Business Analyst",
+        "IT Systems Analyst",
+        "Systems Analyst",
+        "Technical Business Analyst"
+      ]
+    },
+    {
+      "id": "IMP",
+      "share": 15,
+      "titles": [
+        "Implementation Analyst",
+        "Process Improvement Analyst",
+        "Systems Implementation Analyst",
+        "Business Transformation Analyst"
+      ]
+    }
+  ],
+  "levels": [
+    "associate",
+    "intermediate",
+    "mid-level",
+    "select senior roles with demonstrated fit"
+  ],
+  "industries": "Cross-industry: healthcare, government, finance/insurance, higher education, tech/SaaS, media, professional services, and other credible employers",
+  "resumeEvidence": [
+    "Requirements gathering, business process mapping, stakeholder management, source-to-target data mapping",
+    "CRM integrations and workflow automation using Monday.com, Microsoft Dynamics 365, Dataverse, Power Automate, Note ABA, and Microsoft Forms",
+    "UAT, system testing, troubleshooting, Jira ticket coordination, training and documentation",
+    "Reporting with Excel (Power Query, PivotTables, VLOOKUP, VBA), GraphQL APIs, JSON, Looker Studio and analytics",
+    "Defined case-management dashboard requirements and improved staff data availability",
+    "Centralized 450+ BT records and improved onboarding/case-pairing workflows as stated in current application resume",
+    "Website/project implementation and stakeholder communication across organizations"
+  ],
+  "boundaries": [
+    "Do not infer advanced SQL, Python engineering, Tableau or Power BI proficiency without further evidence.",
+    "Excel VBA is stated; do not infer VB.NET or Visual Basic application development.",
+    "Do not claim prior CityTime, government payroll, banking platforms, SAP, Workday, Oracle, or Salesforce expertise unless resume evidence supports it.",
+    "Reject roles requiring active clinical licenses, unsupported current civil-service title, security clearance, advanced programming as mandatory, or other hard disqualifiers.",
+    "Use latest BA resume as source of truth; supplemental master archive cannot overwrite resume claims."
+  ],
+  "resumeSlot": "D",
+  "keepLegacyResumeSlots": [
+    "A",
+    "B",
+    "C"
+  ],
+  "dedupeFile": "applied-index.json",
+  "outputFile": "jobs.json",
+  "jobSchema": {
+    "id": "stable slug",
+    "title": "",
+    "company": "",
+    "location": "",
+    "salary": "",
+    "fit": 0,
+    "resume": "D",
+    "track": "BA | BSA | IT | IMP",
+    "why": "",
+    "gap": "",
+    "applyUrl": ""
+  },
+  "scoring": "Practical fit estimate only; disclose hard requirements and missing skills; no ATS guarantee"
+}
