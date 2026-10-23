@@ -1,6 +1,6 @@
 {
-  "version": "2026-10-22-ba-v2",
-  "source": "Latest BA application resume: Kevin Beltran Rsume .pdf (October 2026)",
+  "version": "2026-10-23-ba-v3",
+  "source": "Latest October 2026 BA application resume: Kevin Beltran Rsume .pdf (primary for job applications and fit claims)",
   "purpose": "Non-sensitive job-search configuration; public repository",
   "objective": "Find full-time Business Analyst-focused work rather than operations management or SEO-first roles.",
   "locationPreferences": [
@@ -77,7 +77,9 @@
     "Excel VBA is stated; do not infer VB.NET or Visual Basic application development.",
     "Do not claim prior CityTime, government payroll, banking platforms, SAP, Workday, Oracle, or Salesforce expertise unless resume evidence supports it.",
     "Reject roles requiring active clinical licenses, unsupported current civil-service title, security clearance, advanced programming as mandatory, or other hard disqualifiers.",
-    "Use latest BA resume as source of truth; supplemental master archive cannot overwrite resume claims."
+    "Use latest BA resume as source of truth; supplemental master archive cannot overwrite resume claims.",
+    "Do not treat the private 18-page master as suitable to upload to this public GitHub repository; preserve provenance and verification notes privately.",
+    "Master distinguishes evaluated, prototyped, tested and implemented work. For employer-facing match explanations, defer to current BA resume claims."
   ],
   "resumeSlot": "D",
   "keepLegacyResumeSlots": [
@@ -100,5 +102,24 @@
     "gap": "",
     "applyUrl": ""
   },
-  "scoring": "Practical fit estimate only; disclose hard requirements and missing skills; no ATS guarantee"
+  "scoring": "Practical fit estimate only; disclose hard requirements and missing skills; no ATS guarantee",
+  "supportingMaster": {
+    "title": "Kevin_Beltran_Comprehensive_Master_Resume_Updated_Oct2026.docx",
+    "savedIn": "Private ChatGPT Library /Kevin folder",
+    "savedDate": "2026-10-14",
+    "internalEdition": "2026-10-13",
+    "lengthPages": 18,
+    "usage": "Supporting internal professional archive only, not an application-ready resume. Never reproduce this private file or its private personal data in the public repository.",
+    "precedence": "Latest BA application resume governs any conflicts in position dates, titles, project status, tool fluency and performance outcomes."
+  },
+  "supportingMasterBAContext": [
+    "Monday.com board design, linked records, status workflows, intake/case-manager views, duplicate-record detection and user support",
+    "BT recruitment/onboarding system using candidate identifiers, form prefill, combined submissions, standardized records and exception alerts",
+    "Stakeholder requirements translation, vendor handoffs, communications, documentation, training and platform rollout support",
+    "Excel-based GraphQL/Power Query data shaping, data validation, reporting views and error investigation",
+    "Experience with website changes and implementation/testing in collaboration with technical teams",
+    "Early career financial-services project coordination and record QA at TIAA, without claiming modern banking-platform experience",
+    "Supplemental master also documents older projects and unverified or prototype workflows; do not silently promote them to completed production work"
+  ],
+  "measurementPolicy": "October 14 saved master retains the original archival projected/estimated wording for some measures, but its own reconciliation records that the user later confirmed 44% reduction in case-pairing time and 67% onboarding form-completion time as achieved; current BA résumé treats them as achieved. Not independently audited."
 }
