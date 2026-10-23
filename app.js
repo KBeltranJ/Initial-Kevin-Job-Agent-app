@@ -1,4 +1,10 @@
-const DEFAULT_CRITERIA={minSalary:"100000",location:"NYC / Long Island / Remote",tracks:["A","B","C"]};
+const DEFAULT_CRITERIA={minSalary:"100000",location:"NYC / Long Island / Remote",tracks:["BA","BSA","IT","IMP"]};
+const BA_TRACKS=["BA","BSA","IT","IMP"];
+function normalizeTracks(selected){
+  if(!Array.isArray(selected))return [...BA_TRACKS];
+  if(selected.some(x=>["A","B","C","D","P"].includes(x)))return [...BA_TRACKS]; // migrate old operations-focused preferences
+  return selected.filter(x=>BA_TRACKS.includes(x));
+}
 let jobs=readJSON("kja_jobs",[]);
 let statuses=readJSON("kja_statuses",{});
 let trackedJobs=readJSON("kja_tracked_jobs",{});
@@ -32,11 +38,19 @@ function locationMatches(job){
   if(criteria.location==="Remote only")return isRemote(loc);
   return isNYC(loc)||isLongIsland(loc)||isRemote(loc);
 }
-function isProgramRole(job){return /(program|project|implementation|transformation|launch)/i.test(`${job.title||""} ${job.why||""}`)}
+function jobTrack(job){
+  if(BA_TRACKS.includes(job.track))return job.track;
+  const title=String(job.title||"");
+  // Only infer a track for legacy jobs without one. An operations manager is not automatically a BA.
+  if(/\b(implementation|process improvement|process|transformation) analyst\b/i.test(title))return "IMP";
+  if(/\b(business systems? analyst|business application(s)? analyst|crm analyst)\b/i.test(title))return "BSA";
+  if(/\b(it business analyst|technical business analyst|systems? analyst|application(s)? analyst)\b/i.test(title))return "IT";
+  if(/\b(business analyst|functional analyst|operations analyst|business process analyst)\b/i.test(title))return "BA";
+  return "";
+}
 function trackMatches(job){
-  const tracks=Array.isArray(criteria.tracks)?criteria.tracks:DEFAULT_CRITERIA.tracks;
-  if(!tracks.length)return true;
-  return tracks.includes(job.resume)||(tracks.includes("P")&&isProgramRole(job));
+  const tracks=normalizeTracks(criteria.tracks);
+  return tracks.length>0 && tracks.includes(jobTrack(job));
 }
 function filteredJobs(){return jobs.filter(job=>salaryMax(job.salary)>=Number(criteria.minSalary||0)&&locationMatches(job)&&trackMatches(job))}
 function snapshotJob(job){if(job&&job.id){trackedJobs[job.id]={...trackedJobs[job.id],...job};saveJSON("kja_tracked_jobs",trackedJobs)}}
@@ -50,6 +64,7 @@ function jobCard(job){
     <div class="job-top"><div><h4>${esc(job.title)}</h4><div class="company">${esc(job.company)}</div></div><span class="fit-badge">${esc(job.fit)}% fit</span></div>
     <div class="meta"><span>${esc(job.location)}</span><span>${esc(job.salary)}</span></div>
     <p>${esc(job.why)}</p>${gap}
+    ${job.track? `<p class="subtle">BA track: ${esc(({BA:"Business Analyst",BSA:"Business Systems Analyst",IT:"IT / Systems Analyst",IMP:"Implementation / Process Analyst"})[job.track]||job.track)}</p>`:""}
     <div class="resume-rec">Recommended Resume: <strong>${esc(job.resume)}</strong></div>
     <div class="actions">${applyButton}<button class="action-btn ${current==="saved"?"selected":""}" data-job="${esc(job.id)}" data-status="saved">Save</button><button class="action-btn ${current==="skipped"?"selected":""}" data-job="${esc(job.id)}" data-status="skipped">Skip</button><button class="action-btn ${current==="expired"?"selected":""}" data-job="${esc(job.id)}" data-status="expired" title="The job link has expired or no longer exists">Link Expired / Not Found</button><button class="action-btn ${current==="applied"?"selected":""}" data-job="${esc(job.id)}" data-status="applied">Applied</button></div>
   </article>`;
@@ -57,7 +72,7 @@ function jobCard(job){
 
 function renderToday(){
   const visible=filteredJobs();
-  jobsList.innerHTML=visible.length?visible.map(jobCard).join(""):`<div class="empty-state"><strong>No jobs match these criteria.</strong><p>Try changing your salary, location, or role-track filters in Criteria.</p></div>`;
+  jobsList.innerHTML=visible.length?visible.map(jobCard).join(""):`<div class="empty-state"><strong>No BA roles match this feed yet.</strong><p>The daily search will add fresh BA-focused roles. You can also adjust salary, location, and role-track filters in Criteria.</p></div>`;
   bindStatusButtons(jobsList);
   matchCount.textContent=visible.length;
   topFitDisplay.textContent=visible.length?Math.max(...visible.map(j=>Number(j.fit)||0))+"%":"—";
@@ -137,7 +152,7 @@ async function loadJobs(){
 
 function applyCriteriaToUI(){
   criteria={...DEFAULT_CRITERIA,...criteria};
-  if(!Array.isArray(criteria.tracks))criteria.tracks=[...DEFAULT_CRITERIA.tracks];
+  criteria.tracks=normalizeTracks(criteria.tracks);
   minSalary.value=criteria.minSalary;locationPref.value=criteria.location;
   document.querySelectorAll("#trackChips .chip").forEach(chip=>chip.classList.toggle("active",criteria.tracks.includes(chip.dataset.track)));
   minSalaryDisplay.textContent=moneyK(criteria.minSalary);
@@ -145,6 +160,7 @@ function applyCriteriaToUI(){
 document.querySelectorAll("#trackChips .chip").forEach(chip=>chip.addEventListener("click",()=>chip.classList.toggle("active")));
 saveCriteria.addEventListener("click",()=>{
   const selected=[...document.querySelectorAll("#trackChips .chip.active")].map(chip=>chip.dataset.track);
+  if(!selected.length){saveMessage.textContent="Select at least one BA role track.";return}
   criteria={minSalary:minSalary.value,location:locationPref.value,tracks:selected};saveJSON("kja_criteria",criteria);applyCriteriaToUI();renderAll();
   saveMessage.textContent=`Saved. ${filteredJobs().length} current jobs match.`;setTimeout(()=>saveMessage.textContent="",2600);
 });
