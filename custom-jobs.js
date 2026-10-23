@@ -6,7 +6,7 @@ const RESUME_PROFILES={
   A:{name:"Healthcare Operations",keywords:["healthcare","aba","behavioral health","patient","patients","clinic","clinical","provider","providers","therapy","therapist","care coordination","intake","authorization","medicaid","case management","practice operations","health services","medical","care delivery"]},
   B:{name:"Business & Systems Operations",keywords:["operations","operational","systems","workflow","process improvement","automation","crm","salesforce","implementation","project management","program management","cross-functional","sop","documentation","vendor","onboarding","process design","business operations","systems operations","power automate","dataverse","monday.com"]},
   C:{name:"Growth Operations",keywords:["growth","growth operations","pipeline","revenue","go-to-market","gtm","marketing operations","funnel","acquisition","retention","conversion","lifecycle","campaign","sales operations","growth strategy","commercial","demand generation","customer growth"]},
-  D:{name:"Business Analyst / Systems Analyst",keywords:["business analyst","systems analyst","requirements","requirements gathering","process mapping","testing","uat","qa","troubleshooting","data analysis","reporting","sql","user stories","technical documentation","web application","system integration","functional requirements","business requirements","data quality","dashboard"]}
+  D:{name:"Business Analyst / Systems Analyst",keywords:["business analyst","systems analyst","requirements","requirements gathering","process mapping","testing","uat","qa","troubleshooting","data analysis","reporting","excel","power query","graphQL","monday.com","dynamics 365","dataverse","power automate","source-to-target","data mapping","technical documentation","web application","system integration","functional requirements","business requirements","data quality","dashboard","stakeholder","sop"]}
 };
 const COMMON_STRENGTHS=["training","onboarding","stakeholder","stakeholders","project","implementation","workflow","process","reporting","dashboard","excel","crm","cross-functional","documentation","sop","automation","systems"];
 
@@ -27,22 +27,27 @@ function analyzeLocalJob({title="",company="",description="",url="",location="",
     if(slot==="D"&&/(business analyst|systems analyst|analyst|requirements)/i.test(title))raw+=14;
     return {slot,name:p.name,raw,hits:m.hits};
   }).sort((a,b)=>b.raw-a.raw);
-  const best=scored[0],second=scored[1];
-  const evidence=Math.min(1,(best.hits.length+common.hits.length)/9);
-  let fit=Math.round(62+Math.min(25,best.raw*0.9)+Math.min(6,common.score)-Math.max(0,(second.raw-best.raw+5)*0.15));
-  fit=Math.max(68,Math.min(96,fit));
-  if(evidence<.35)fit=Math.min(fit,82);
+  const best=scored[0];
+  const hasBAWork=/(business analyst|business systems|systems analyst|IT analyst|implementation analyst|process analyst|functional analyst|requirements|user acceptance testing|UAT)/i.test(text);
+  const focusProfile=hasBAWork?scored.find(x=>x.slot==="D"):best;
+  const evidence=Math.min(1,(focusProfile.hits.length+common.hits.length)/10);
+  let fit=Math.round(42+Math.min(37,focusProfile.hits.length*4)+Math.min(10,common.score*2));
+  fit=Math.max(35,Math.min(89,fit));
+  if(evidence<.3)fit=Math.min(fit,63);
   const whyParts=[];
-  if(best.hits.length)whyParts.push(`Strong signals for ${best.name.toLowerCase()}: ${best.hits.slice(0,5).join(", ")}.`);
+  if(focusProfile.hits.length)whyParts.push(`Resume-supported overlap for ${focusProfile.name.toLowerCase()}: ${focusProfile.hits.slice(0,5).join(", ")}.`);
   if(common.hits.length)whyParts.push(`Also overlaps with your transferable strengths in ${common.hits.slice(0,4).join(", ")}.`);
-  if(!whyParts.length)whyParts.push(`This looks closest to your ${best.name.toLowerCase()} profile based on the title and responsibilities provided.`);
+  if(!whyParts.length)whyParts.push("There is limited evidence of overlap with the supplied job description.");
   const watch=[];
-  if(/\b(sql|python|tableau|power bi)\b/i.test(text))watch.push("Technical/data tools appear important; describe only the level you can support accurately.");
+  if(/\b(advanced sql|expert sql|complex sql|sql programming|sql development|stored procedures|query optimization)\b/i.test(text))watch.push("Advanced SQL is not demonstrated in the current résumé; confirm whether it is required.");
+  else if(/\bsql\b/i.test(text))watch.push("The résumé does not establish SQL depth; describe your experience conservatively.");
+  if(/\b(python development|python programming|production python)\b/i.test(text))watch.push("Professional Python development is not evidenced by the résumé.");
+  if(/\b(visual basic|vb\.net)\b/i.test(text))watch.push("Excel VBA is listed, but Visual Basic application-development experience is not established.");
   if(/\b(p&l|profit and loss|budget ownership|financial modeling|forecasting)\b/i.test(text))watch.push("The role appears to include financial ownership or modeling; make sure your examples support that requirement.");
   if(/\b(7\+|8\+|10\+|seven|eight|ten) years\b/i.test(text))watch.push("The experience requirement may be above your current direct experience, so position transferable ownership clearly.");
   if(/\b(licensed|license required|bcba required|rn required|clinical license)\b/i.test(text))watch.push("Check whether a professional license or clinical credential is mandatory before applying.");
   if(!watch.length)watch.push("This is an estimated local match. Review the must-have requirements before applying.");
-  return {fit,resume:best.slot,resumeName:best.name,why:whyParts.join(" "),gap:watch.join(" "),source:detectSource(url),title:cleanText(title),company:cleanText(company),description:description.trim(),applyUrl:url.trim(),location:cleanText(location),salary:cleanText(salary)};
+  return {fit,resume:focusProfile.slot,resumeName:focusProfile.name,why:whyParts.join(" "),gap:watch.join(" "),source:detectSource(url),title:cleanText(title),company:cleanText(company),description:description.trim(),applyUrl:url.trim(),location:cleanText(location),salary:cleanText(salary)};
 }
 
 function injectCustomJobsUI(){
