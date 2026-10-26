@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T12:43:41.934Z",
+  "updatedAt": "2026-10-26T12:27:06.000Z",
   "source": "daily-chatgpt-search",
   "jobs": [
     {
@@ -8,24 +8,37 @@
       "company": "Sony Music Entertainment",
       "location": "New York, NY — office-based",
       "salary": "$100,000–$110,000",
-      "fit": 91,
+      "fit": 90,
       "resume": "D",
       "track": "BSA",
-      "why": "Direct match for stakeholder requirements sessions, low-code workflows, Microsoft Dynamics 365/Power Automate integrations, data mapping, testing, training and documentation from the October application résumé.",
-      "gap": "Employer seeks 2–5 years of enterprise business/systems analysis and hands-on low-code administration with governance; résumé establishes about one year in a formal BA role and less proven enterprise governance. Airtable is optional.",
+      "why": "Employer's active careers posting covers stakeholder requirements, low-code workflow and integration specifications, testing, migration, user training and documentation; October résumé evidences Monday.com/Dynamics 365/Power Automate integration, data mapping and end-user training.",
+      "gap": "Requires 2–5 years of enterprise business/systems analysis and hands-on low-code administration with security/governance; October résumé documents roughly one year of formal BA experience. Airtable is nice-to-have, not demonstrated.",
       "applyUrl": "https://careers.sonymusic.com/jobs/8805856002"
+    },
+    {
+      "id": "makai-labs-business-analyst-e170b3c0",
+      "title": "Business Analyst",
+      "company": "Makai Labs",
+      "location": "US remote — New York eligible",
+      "salary": "$100,000–$110,000",
+      "fit": 85,
+      "resume": "D",
+      "track": "BA",
+      "why": "Client discovery, current-state workflow diagrams, requirements specifications, UAT, pilot training, product feedback and issue resolution directly match documented CRM implementation and testing work; employer ATS posting is corroborated by currently hiring Wellfound listing.",
+      "gap": "Requests 3+ years in a BA, financial analyst or computer-science role and Agile product lifecycle fluency; formal BA tenure is shorter. Ashby page uses JavaScript, so submission form was not independently tested.",
+      "applyUrl": "https://jobs.ashbyhq.com/makai-labs/e170b3c0-42c9-4bab-8afb-69c3b2f714b6/"
     },
     {
       "id": "ross-stores-business-analyst-12339",
       "title": "Business Analyst",
       "company": "Ross Stores",
-      "location": "New York, NY — hybrid, regular in-office presence",
-      "salary": "$84,700–$136,150 (low end below $100K target)",
-      "fit": 85,
+      "location": "New York, NY — hybrid, regular office attendance",
+      "salary": "$84,700–$136,150 (lower bound below $100K target)",
+      "fit": 83,
       "resume": "D",
       "track": "IT",
-      "why": "Official IT functional analyst posting emphasizes requirements, user stories, root-cause analysis, UAT, defect resolution, production troubleshooting, change management and documentation; résumé demonstrates CRM integrations, Jira bug tracking, QA and stakeholder work.",
-      "gap": "Requires 3–5 years supporting IT systems and a technical degree or equivalent experience; résumé has a communications degree and shorter formal systems-analysis tenure. Salary offer could be below $100K.",
+      "why": "Employer's live IT functional BA requisition (posted October 5) covers requirements, user stories, root-cause analysis, production troubleshooting, testing, defect resolution, change management and documentation; résumé demonstrates related CRM, QA and Jira work.",
+      "gap": "Requires 3–5 years supporting IT systems and a technical degree or equivalent work experience; formal systems-analysis tenure and degree field are gaps. Offer could be below $100K.",
       "applyUrl": "https://jobs.rossstores.com/search/jobdetails/business-analyst/6f6821f2-3be4-4571-b20c-a5ba36c9a12b"
     },
     {
@@ -33,26 +46,13 @@
       "title": "Business Analyst - REMOTE",
       "company": "Knock",
       "location": "US remote — New York eligible",
-      "salary": "$86,500–$114,000 (low end below $100K target)",
-      "fit": 83,
+      "salary": "$86,500–$114,000 (lower bound below $100K target)",
+      "fit": 80,
       "resume": "D",
       "track": "BA",
-      "why": "Newly listed employer-hosted opening requires Excel reporting, CRM data quality, field mapping, process documentation and automation across teams; résumé evidences Power Query/GraphQL reporting, Looker Studio, deduplication and workflow improvement.",
-      "gap": "Working SQL knowledge including joins and conditional logic is requested but not demonstrated on October résumé; dashboard platform may be Tableau (not claimed). $100K offer not guaranteed.",
+      "why": "Employer's active Greenhouse form (expires December 31, 2026) covers Excel reporting, CRM data cleaning, field mapping, dashboard standards and process automation; résumé shows Excel Power Query/GraphQL, JSON, CRM record matching and workflow improvements.",
+      "gap": "Working SQL including joins and conditional logic is required but not demonstrated on the October résumé; Tableau is a nice-to-have. Offer could be below $100K.",
       "applyUrl": "https://job-boards.greenhouse.io/knock/jobs/6233904004"
-    },
-    {
-      "id": "makai-labs-business-analyst-e170b3c0",
-      "title": "Business Analyst",
-      "company": "Makai Labs",
-      "location": "Remote — New York eligible",
-      "salary": "$100,000–$110,000",
-      "fit": 82,
-      "resume": "D",
-      "track": "BA",
-      "why": "Employer's full-time BA role covers client discovery, current-state process diagrams, requirements/specifications, UAT, implementation training, user feedback, backlog follow-up and troubleshooting, closely aligned with documented CRM workflow projects.",
-      "gap": "Requires 3+ years in BA/financial analyst/computer-science roles and Agile product lifecycle experience; formal BA tenure is shorter, though adjacent analytics and Jira work may help. Employer Ashby posting is JavaScript-rendered.",
-      "applyUrl": "https://jobs.ashbyhq.com/makai-labs/e170b3c0-42c9-4bab-8afb-69c3b2f714b6/"
     }
   ]
 }
