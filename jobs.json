@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T12:53:08.517Z",
+  "updatedAt": "2026-10-30T12:56:39.300Z",
   "source": "daily-chatgpt-search",
   "jobs": [
     {
@@ -11,35 +11,48 @@
       "fit": 90,
       "resume": "D",
       "track": "BSA",
-      "why": "Employer listing live Oct 29: stakeholder requirements, no-code/low-code workflows, integration specifications, data migration, testing and user training align with documented Monday.com, Dynamics 365, Dataverse and Power Automate implementations.",
-      "gap": "Employer seeks 2–5 years of enterprise business/systems analysis and governed low-code administration; formal BA tenure is about one year. Airtable is nice-to-have.",
+      "why": "Employer listing accessible Oct 30: stakeholder discovery, no-code/low-code workflows, integration specs, testing, data migration, user training and documentation match documented Monday.com, Dynamics 365, Dataverse and Power Automate work.",
+      "gap": "Requires 2–5 years in enterprise business/systems analysis and governed low-code administration; formal BA tenure is approximately one year. Airtable is nice-to-have.",
       "applyUrl": "https://careers.sonymusic.com/jobs/8805856002"
     },
     {
       "id": "haugland-group-business-systems-analyst-melville",
       "title": "Business Systems Analyst",
       "company": "Haugland Group",
-      "location": "Melville, NY — local on-site (hybrid not advertised)",
+      "location": "Melville, NY — on-site; hybrid not advertised",
       "salary": "$140,000–$165,000",
-      "fit": 88,
+      "fit": 87,
       "resume": "D",
       "track": "BSA",
-      "why": "Active employer application verified Oct 29. Requirements elicitation, as-is/to-be mapping, data migration, UAT, defects, integrations and training fit documented healthcare CRM/system integration work.",
-      "gap": "Construction estimating, certified payroll, Procore/Viewpoint/HCSS and Power BI are desired but not demonstrated; compensation may reflect an experienced construction-domain candidate.",
+      "why": "Live employer application Oct 30. Stakeholder interviews, process mapping, source-to-target migration, UAT, integration validation and SOPs closely match documented healthcare CRM systems and process analysis.",
+      "gap": "Construction estimating, certified payroll, Procore/Viewpoint/HCSS and Power BI are desired but not shown in the application résumé; salary may reflect experienced construction-domain candidates.",
       "applyUrl": "https://jobs.miter.com/haugland-group-llc/business-systems-analyst-ny-melville/apply"
+    },
+    {
+      "id": "success-academy-crm-business-analyst-5455769008",
+      "title": "CRM Business Analyst",
+      "company": "Success Academy Charter Schools",
+      "location": "New York, NY — hybrid, office Tue–Thu",
+      "salary": "$115,000–$125,000",
+      "fit": 83,
+      "resume": "D",
+      "track": "BSA",
+      "why": "Active original Greenhouse posting Oct 30. Requirements, user stories, process mapping, CRM workflow improvements, data quality, UAT and training align with documented Dynamics 365/Monday.com integration and analytics plus prior marketing experience.",
+      "gap": "Requires 3–5 years in Salesforce, HubSpot or equivalent CRM/marketing/systems BA roles; current formal BA tenure is shorter and Salesforce/HubSpot hands-on expertise is not established. Related degree or equivalent experience also assessed.",
+      "applyUrl": "https://job-boards.greenhouse.io/successacademycharterschool/jobs/5455769008"
     },
     {
       "id": "ross-stores-business-analyst-12339",
       "title": "Business Analyst",
       "company": "Ross Stores",
-      "location": "New York, NY — hybrid (regular in-office attendance)",
+      "location": "New York, NY — hybrid with regular office presence",
       "salary": "$84,700–$136,150 (lower end below $100K target)",
-      "fit": 84,
+      "fit": 81,
       "resume": "D",
       "track": "IT",
-      "why": "Official employer apply page live Oct 29; functional requirements, user stories, troubleshooting, testing, issue resolution, documentation and change management align with documented Jira ticketing, UAT and CRM implementation.",
-      "gap": "Requires 3–5 years supporting IT systems and a technical degree or equivalent experience; Communications degree and limited formal IT BA tenure are material gaps. Offer may be below $100K.",
-      "applyUrl": "https://careers.rossstores.com/job/NEW-YORK-Business-Analyst-NY-10018/12339-en_US/"
+      "why": "Employer posting and Apply link live Oct 30. Requirements, user stories, UAT, defect troubleshooting, change management and process documentation match documented Jira coordination, system testing and CRM implementation.",
+      "gap": "Requires 3–5 years supporting IT systems/processes and a technical degree or equivalent experience; formal IT BA tenure is shorter. Offer may fall below $100K.",
+      "applyUrl": "https://jobs.rossstores.com/search/jobdetails/business-analyst/6f6821f2-3be4-4571-b20c-a5ba36c9a12b"
     },
     {
       "id": "makai-labs-business-analyst-e170b3c0",
@@ -47,25 +60,12 @@
       "company": "Makai Labs",
       "location": "US remote — New York eligible",
       "salary": "$100,000–$110,000",
-      "fit": 82,
+      "fit": 79,
       "resume": "D",
       "track": "BA",
-      "why": "Employer ATS listing corroborated by current employer-managed Wellfound jobs page Oct 29; client discovery, workflow mapping, functional specs, feature testing, training and implementation support fit documented business/process analysis and Jira coordination.",
-      "gap": "Requires 3+ years in BA/financial analysis/computer-science roles and Agile product-lifecycle experience; formal BA tenure is about one year. Ashby form could not be fully tested.",
+      "why": "Employer-managed Wellfound page still lists full-time position Oct 30 and Ashby ATS URL remains reachable (JS form). Client discovery, current-state diagrams, specifications, feature testing, training and post-launch feedback match documented BA and system implementation work.",
+      "gap": "Requires 3+ years in BA/financial analysis/computer-science roles and Agile product lifecycle experience; current formal BA tenure is about one year. Ashby submission form cannot be independently tested.",
       "applyUrl": "https://jobs.ashbyhq.com/makai-labs/e170b3c0-42c9-4bab-8afb-69c3b2f714b6/"
-    },
-    {
-      "id": "knock-business-analyst-6233904004",
-      "title": "Business Analyst - REMOTE",
-      "company": "Knock",
-      "location": "US remote",
-      "salary": "$86,500–$114,000 (lower end below $100K target)",
-      "fit": 78,
-      "resume": "D",
-      "track": "BA",
-      "why": "Live Greenhouse application verified Oct 29 (posting expires Dec 31, 2026). Excel reporting, data quality, field mapping, CRM workflows and automation align with documented Power Query, GraphQL and data consolidation.",
-      "gap": "Working SQL joins and conditional logic are required but not demonstrated; Tableau and data-pipeline ownership also stretch current evidence. Salary may fall below target.",
-      "applyUrl": "https://job-boards.greenhouse.io/knock/jobs/6233904004"
     }
   ]
 }
