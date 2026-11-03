@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T13:29:52.699Z",
+  "updatedAt": "2026-11-03T13:11:21.000Z",
   "source": "daily-chatgpt-search",
   "jobs": [
     {
@@ -11,7 +11,7 @@
       "fit": 89,
       "resume": "D",
       "track": "BSA",
-      "why": "Employer posting live Nov 2. Requirements workshops, low-code workflows, integrations, testing, data migration, training and documentation align with documented CRM, automation and systems-delivery experience.",
+      "why": "Verified on employer application page Nov 3. Requirements workshops, low-code workflows, integrations, testing, data migration, training and documentation align with documented CRM, automation and systems-delivery experience.",
       "gap": "Requires 2–5 years of enterprise business/systems analysis and governed no-code/low-code administration. Airtable is preferred rather than required.",
       "applyUrl": "https://careers.sonymusic.com/jobs/8805856002"
     },
@@ -24,22 +24,9 @@
       "fit": 85,
       "resume": "D",
       "track": "BSA",
-      "why": "Employer application live Nov 2. Stakeholder discovery, current/future-state mapping, data migration, integration validation, UAT, documentation and training strongly match the BA/systems-improvement skill track.",
+      "why": "Verified on employer application page Nov 3. Stakeholder discovery, current/future-state mapping, data migration, integration validation, UAT, documentation and training strongly match the BA/systems-improvement skill track.",
       "gap": "Construction job-cost, certified-payroll and ERP experience (Procore, Viewpoint, HCSS) are desired and not established; high salary may favor construction-domain specialists.",
       "applyUrl": "https://jobs.miter.com/haugland-group-llc/business-systems-analyst-ny-melville/apply"
-    },
-    {
-      "id": "everforth-ecs-business-process-analyst-remote-2026",
-      "title": "Business Process Analyst",
-      "company": "Everforth ECS (ECS Federal LLC)",
-      "location": "US remote — employer based in Virginia; NY eligibility to confirm",
-      "salary": "$110,000–$120,000",
-      "fit": 84,
-      "resume": "D",
-      "track": "IMP",
-      "why": "New posting independently corroborated Nov 2 by Indeed, Glassdoor and current job listings. Process maps, stakeholder interviews, user stories, Power Automate exposure, UAT and rollout support align closely with documented workflow/process work.",
-      "gap": "Bachelor's in Business/IT or related field and 2+ years BA/process improvement; BPMN and Agile/Waterfall knowledge need substantiation. Federal-client screening and NY remote eligibility should be checked. Direct requisition URL not verified; apply link opens employer job board.",
-      "applyUrl": "https://myjobs.adp.com/ecsfederal/cx/job-listing?rb=CareerSite"
     },
     {
       "id": "success-academy-crm-business-analyst-5455769008",
@@ -50,7 +37,7 @@
       "fit": 81,
       "resume": "D",
       "track": "BSA",
-      "why": "Original Greenhouse application live Nov 2. CRM requirements, workflow optimization, data quality, reporting, UAT and training align with documented systems and stakeholder experience.",
+      "why": "Verified on employer application page Nov 3. CRM requirements, workflow optimization, data quality, reporting, UAT and training align with documented systems and stakeholder experience.",
       "gap": "Requests 3–5 years in Salesforce/HubSpot/equivalent CRM or analyst roles and an IS/CS/Marketing degree or equivalent combination. Direct Salesforce and HubSpot experience not established.",
       "applyUrl": "https://job-boards.greenhouse.io/successacademycharterschool/jobs/5455769008"
     },
@@ -63,7 +50,7 @@
       "fit": 80,
       "resume": "D",
       "track": "BA",
-      "why": "New original employer Lever application live Nov 2. Requirements gathering, cross-system analysis, UAT, stakeholder workshops, documentation and user training fit documented BA and healthcare/digital delivery experience.",
+      "why": "Verified on employer application page Nov 3. Requirements gathering, cross-system analysis, UAT, stakeholder workshops, documentation and user training fit documented BA and healthcare/digital delivery experience.",
       "gap": "Strong enterprise SDLC, Agile/Scrum, UML/use cases, wireframes and domain-driven design are requested but not all demonstrated; salary may be below $100K.",
       "applyUrl": "https://jobs.lever.co/avalerehealth/9ff10efa-6df8-48ee-b188-7645f7ae5950"
     },
@@ -76,22 +63,9 @@
       "fit": 79,
       "resume": "D",
       "track": "IT",
-      "why": "Original employer listing live Nov 2; posted Oct 5. Functional requirements, user stories, troubleshooting, UAT, defect coordination and documentation match documented IT-facing workflow and ticketing activities.",
+      "why": "Verified on employer application page Nov 3. ; posted Oct 5. Functional requirements, user stories, troubleshooting, UAT, defect coordination and documentation match documented IT-facing workflow and ticketing activities.",
       "gap": "Requires 3–5 years supporting IT systems and technical degree or equivalent experience; IT systems tenure and retail expertise may be questioned. Offer could be below $100K.",
       "applyUrl": "https://jobs.rossstores.com/search/jobdetails/business-analyst/6f6821f2-3be4-4571-b20c-a5ba36c9a12b"
-    },
-    {
-      "id": "makai-labs-business-analyst-e170b3c0",
-      "title": "Business Analyst",
-      "company": "Makai Labs",
-      "location": "US remote — New York eligible",
-      "salary": "$100,000–$110,000",
-      "fit": 77,
-      "resume": "D",
-      "track": "BA",
-      "why": "Employer Ashby listing corroborated by a live company hiring board Nov 2. Client discovery, process diagrams, functional specs, user testing, training and post-launch improvements fit documented BA/process experience.",
-      "gap": "Requires 3+ years BA/financial analyst/computer science and experience in Agile product lifecycle and Jira/Azure DevOps. Employer Ashby page uses JavaScript; application submission not independently tested.",
-      "applyUrl": "https://jobs.ashbyhq.com/makai-labs/e170b3c0-42c9-4bab-8afb-69c3b2f714b6/"
     }
   ]
 }
