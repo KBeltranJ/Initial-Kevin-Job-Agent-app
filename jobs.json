@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T13:11:21.000Z",
+  "updatedAt": "2026-11-04T13:51:08.000Z",
   "source": "daily-chatgpt-search",
   "jobs": [
     {
@@ -11,34 +11,34 @@
       "fit": 89,
       "resume": "D",
       "track": "BSA",
-      "why": "Verified on employer application page Nov 3. Requirements workshops, low-code workflows, integrations, testing, data migration, training and documentation align with documented CRM, automation and systems-delivery experience.",
-      "gap": "Requires 2–5 years of enterprise business/systems analysis and governed no-code/low-code administration. Airtable is preferred rather than required.",
+      "why": "Employer listing checked Nov 4. Stakeholder requirements, low-code workflows, integration specifications, testing, migrations and training align with documented CRM and automation work.",
+      "gap": "Requests 2–5 years of enterprise business/systems analysis and hands-on governed low-code administration; Airtable is nice-to-have.",
       "applyUrl": "https://careers.sonymusic.com/jobs/8805856002"
     },
     {
       "id": "haugland-group-business-systems-analyst-melville",
       "title": "Business Systems Analyst",
       "company": "Haugland Group",
-      "location": "Melville, NY — on-site; no hybrid advertised",
+      "location": "Melville, NY — on-site",
       "salary": "$140,000–$165,000",
       "fit": 85,
       "resume": "D",
       "track": "BSA",
-      "why": "Verified on employer application page Nov 3. Stakeholder discovery, current/future-state mapping, data migration, integration validation, UAT, documentation and training strongly match the BA/systems-improvement skill track.",
-      "gap": "Construction job-cost, certified-payroll and ERP experience (Procore, Viewpoint, HCSS) are desired and not established; high salary may favor construction-domain specialists.",
+      "why": "Employer's current jobs board and application checked Nov 4. Requirements, current/future-state process mapping, data mapping and migration, UAT and documentation closely align.",
+      "gap": "Construction job-cost, certified payroll and ERP knowledge (Viewpoint/Procore/HCSS) are desired but not demonstrated; senior compensation may favor domain experience.",
       "applyUrl": "https://jobs.miter.com/haugland-group-llc/business-systems-analyst-ny-melville/apply"
     },
     {
       "id": "success-academy-crm-business-analyst-5455769008",
       "title": "CRM Business Analyst",
       "company": "Success Academy Charter Schools",
-      "location": "New York, NY — hybrid; Tue–Thu on-site",
+      "location": "New York, NY — hybrid, Tue–Thu on-site",
       "salary": "$115,000–$125,000",
       "fit": 81,
       "resume": "D",
       "track": "BSA",
-      "why": "Verified on employer application page Nov 3. CRM requirements, workflow optimization, data quality, reporting, UAT and training align with documented systems and stakeholder experience.",
-      "gap": "Requests 3–5 years in Salesforce/HubSpot/equivalent CRM or analyst roles and an IS/CS/Marketing degree or equivalent combination. Direct Salesforce and HubSpot experience not established.",
+      "why": "Live Greenhouse application checked Nov 4. CRM requirements, process flows, testing, data quality and reporting match documented Dynamics 365 and workflow experience.",
+      "gap": "Requires 3–5 years in Salesforce/HubSpot/equivalent CRM or related analyst roles and specified degree or equivalent combination; Salesforce/HubSpot not demonstrated.",
       "applyUrl": "https://job-boards.greenhouse.io/successacademycharterschool/jobs/5455769008"
     },
     {
@@ -50,21 +50,21 @@
       "fit": 80,
       "resume": "D",
       "track": "BA",
-      "why": "Verified on employer application page Nov 3. Requirements gathering, cross-system analysis, UAT, stakeholder workshops, documentation and user training fit documented BA and healthcare/digital delivery experience.",
-      "gap": "Strong enterprise SDLC, Agile/Scrum, UML/use cases, wireframes and domain-driven design are requested but not all demonstrated; salary may be below $100K.",
+      "why": "Live Lever listing checked Nov 4. Requirements workshops, UAT, use cases, training and cross-system stakeholder coordination align with documented BA work.",
+      "gap": "Enterprise application delivery, Agile/Scrum, UML, wireframes and domain-driven design are requested but not all established; salary may be below target.",
       "applyUrl": "https://jobs.lever.co/avalerehealth/9ff10efa-6df8-48ee-b188-7645f7ae5950"
     },
     {
       "id": "ross-stores-business-analyst-12339",
       "title": "Business Analyst",
       "company": "Ross Stores",
-      "location": "New York, NY — hybrid; regular office presence",
+      "location": "New York, NY — hybrid, regular office presence",
       "salary": "$84,700–$136,150 (low end below $100K target)",
       "fit": 79,
       "resume": "D",
       "track": "IT",
-      "why": "Verified on employer application page Nov 3. ; posted Oct 5. Functional requirements, user stories, troubleshooting, UAT, defect coordination and documentation match documented IT-facing workflow and ticketing activities.",
-      "gap": "Requires 3–5 years supporting IT systems and technical degree or equivalent experience; IT systems tenure and retail expertise may be questioned. Offer could be below $100K.",
+      "why": "Live employer posting checked Nov 4; posted Oct 5. Requirements, user stories, troubleshooting, UAT, defects and documentation fit systems improvement and Jira coordination.",
+      "gap": "Requires 3–5 years supporting IT systems and technical degree or equivalent experience; compensation may be below target.",
       "applyUrl": "https://jobs.rossstores.com/search/jobdetails/business-analyst/6f6821f2-3be4-4571-b20c-a5ba36c9a12b"
     }
   ]
