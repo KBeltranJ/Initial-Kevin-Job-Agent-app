@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T18:17:02.504Z",
+  "updatedAt": "2026-11-11T18:23:21.808Z",
   "source": "daily-chatgpt-search",
   "jobs": [
     {
@@ -66,6 +66,19 @@
       "why": "Employer listing rechecked Nov 11 (afternoon). Live employer posting posted Oct 5. Requirements, user stories, troubleshooting, UAT, defects and documentation fit systems improvement and Jira coordination.",
       "gap": "Requires 3–5 years supporting IT systems and technical degree or equivalent experience; compensation may be below target.",
       "applyUrl": "https://jobs.rossstores.com/search/jobdetails/business-analyst/6f6821f2-3be4-4571-b20c-a5ba36c9a12b"
+    },
+    {
+      "id": "success-academy-business-analyst-salesforce-administrator-5378029008",
+      "title": "Business Analyst / Salesforce Administrator",
+      "company": "Success Academy Charter Schools",
+      "location": "New York, NY — hybrid, Tue–Thu on-site",
+      "salary": "$110,000–$120,000",
+      "fit": 74,
+      "resume": "D",
+      "track": "BSA",
+      "why": "Live employer application verified Nov 11. CRM requirements, UAT, end-user training, Dynamics 365 experience, and workflow configuration are relevant transferable strengths.",
+      "gap": "Hands-on Salesforce administration (objects, page layouts, validation rules and flows) is central; Dynamics 365 is listed as a preferred alternative, but direct Salesforce experience is not demonstrated.",
+      "applyUrl": "https://job-boards.greenhouse.io/successacademycharterschool/jobs/5378029008"
     }
   ]
 }
