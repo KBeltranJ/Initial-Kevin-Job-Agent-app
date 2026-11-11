@@ -143,10 +143,10 @@ function renderAll(){renderToday();renderSaved();renderApplied();renderCounts()}
 async function loadJobs(){
   refreshJobs.disabled=true;refreshJobs.textContent="Refreshing…";
   try{
-    const res=await fetch("./jobs.json",{cache:"no-store"});if(!res.ok)throw new Error("Job feed unavailable");
+    const res=await fetch(`./jobs.json?refresh=${Date.now()}`,{cache:"no-store"});if(!res.ok)throw new Error("Job feed unavailable");
     const data=await res.json();
     if(Array.isArray(data.jobs)){jobs=data.jobs;saveJSON("kja_jobs",jobs);feedUpdatedAt=data.updatedAt||new Date().toISOString();localStorage.setItem("kja_feed_updated",feedUpdatedAt)}
-  }catch(err){console.warn("Using cached job feed",err)}
+  }catch(err){console.warn("Using cached job feed",err);feedStatus.textContent="Could not download latest feed. Showing cached jobs; check connection and try again."}
   finally{refreshJobs.disabled=false;refreshJobs.textContent="Refresh";renderAll()}
 }
 
