@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T13:46:23.108Z",
+  "updatedAt": "2026-11-22T13:06:51.000Z",
   "source": "daily-chatgpt-search",
   "jobs": [
     {
@@ -11,7 +11,7 @@
       "fit": 89,
       "resume": "D",
       "track": "BSA",
-      "why": "Employer role posting accessible Nov 21; stakeholder requirements, low-code workflows, integration specifications, testing and training align with documented CRM and automation work.",
+      "why": "Employer role posting accessible Nov 22; stakeholder requirements, low-code workflows, integration specifications, testing and training align with documented CRM and automation work.",
       "gap": "Requests 2–5 years of enterprise business/systems analysis and hands-on governed low-code administration; Airtable is nice-to-have.",
       "applyUrl": "https://careers.sonymusic.com/jobs/8805856002"
     },
@@ -24,7 +24,7 @@
       "fit": 85,
       "resume": "D",
       "track": "BSA",
-      "why": "Employer full-time application form accessible Nov 21; requirements, process mapping, migration/UAT and documentation align with documented experience.",
+      "why": "Employer full-time application form accessible Nov 22; requirements, process mapping, migration/UAT and documentation align with documented experience.",
       "gap": "Construction job-cost, certified payroll and ERP knowledge (Viewpoint/Procore/HCSS) are desired but not demonstrated; senior compensation may favor domain experience.",
       "applyUrl": "https://jobs.miter.com/haugland-group-llc/business-systems-analyst-ny-melville/apply"
     },
@@ -37,7 +37,7 @@
       "fit": 81,
       "resume": "D",
       "track": "BSA",
-      "why": "Employer Greenhouse application form accessible Nov 21; CRM requirements, user stories, testing, reporting and training align with documented Dynamics 365 work.",
+      "why": "Employer Greenhouse application form accessible Nov 22; CRM requirements, user stories, testing, reporting and training align with documented Dynamics 365 work.",
       "gap": "Requires 3–5 years in Salesforce/HubSpot/equivalent CRM or related analyst roles and specified degree or equivalent combination; Salesforce/HubSpot not demonstrated.",
       "applyUrl": "https://job-boards.greenhouse.io/successacademycharterschool/jobs/5455769008"
     },
@@ -50,7 +50,7 @@
       "fit": 77,
       "resume": "D",
       "track": "BA",
-      "why": "Active original Greenhouse application verified Nov 21; stakeholder/data requirements, workflows, documentation, cross-functional SDLC coordination and reporting align with documented BA, Excel and CRM experience. Associate level is the relevant target.",
+      "why": "Active original Greenhouse application verified Nov 22; stakeholder/data requirements, workflows, documentation, cross-functional SDLC coordination and reporting align with documented BA, Excel and CRM experience. Associate level is the relevant target.",
       "gap": "Requires 2–5 years in financial services, financial data, fintech, consulting or related fields and a qualifying bachelor's degree; significant SQL/Python/Tableau/Power BI or similar analytics experience is preferred, not established. Private-markets domain is a gap.",
       "applyUrl": "https://job-boards.greenhouse.io/icapitalnetwork/jobs/8935143002"
     },
@@ -63,7 +63,7 @@
       "fit": 80,
       "resume": "D",
       "track": "BA",
-      "why": "Employer Lever careers board directly lists full-time US-remote Business Analyst on Nov 21; individual application returns 403. Requirements, UAT and documentation match documented experience.",
+      "why": "Employer Lever careers board still lists full-time US-remote Business Analyst Nov 22; direct job page returns 403. Requirements, UAT and documentation align with documented experience.",
       "gap": "Enterprise application delivery, Agile/Scrum, UML, wireframes and domain-driven design are requested but not all established; salary may be below target.",
       "applyUrl": "https://jobs.lever.co/avalerehealth/9ff10efa-6df8-48ee-b188-7645f7ae5950"
     }
